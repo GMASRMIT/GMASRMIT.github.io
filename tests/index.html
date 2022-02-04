@@ -33,6 +33,7 @@
 		transition: all 1s cubic-bezier(0.85, 0, 0.15, 1);
 		color: #d33a2c;
 		padding: 30px;
+		font-size: 12px;
 	}
 
 	h1 {
@@ -42,14 +43,16 @@
 	}
 
 	p {
-		font-size: 30px;
+		font-size: 20px;
 	}
 
 	a {
 		text-decoration: none;
 	}
 
-	.container {
+	/* ///////////////////////////////////////////////////////////////////////////////// */
+
+	.flexcontainer {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -60,16 +63,40 @@
 		height: 100%;
 	}
 
-	.box {
+	.innerflexcontainer {
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		/* align-content: center; */
+		/* align-self: center; */
+
+		/* width: 100%; */
+		/* height: 100%; */
+
+		/* background-color: pink; */
+	}
+
+	/* ///////////////////////////////////////////////////////////////////////////////// */
+
+	.headerbanner {
+
+		/* ///////// */
+		/* display: none !important; */
+		/* //////// */
+
+		display: block;
 		margin: 10px;
 		/* height: 340px; */
 		width: 100%;
-		max-width: 800px;
-		padding: 0px 0px 0px 0px;
+		max-width: 700px;
+		/* max-width: 1423px; */
+		height: 300px;
+		padding: 0px 0px 30px 0px;
+
+		overflow: hidden;
 
 		color: white;
-		font-size: 10em;
+		/* font-size: 10em; */
 		text-align: left;
 		vertical-align: bottom;
 
@@ -86,36 +113,72 @@
 
 		transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 	}
-	/* .box:hover {
-		transform: scale(1.08);
+	.headerbanner:hover {
+		border-color: white;
 	}
-	.box:active {
-		transform: scale(0.98);
-	} */
+	.headerbanner:active {
+			transform: scale(0.96);
+	}
 
-	.title {
+	.box {
+		display: block;
+		margin: 10px;
+		/* height: 340px; */
+		width: 100%;
+		max-width: 700px;
+		padding: 0px 0px 30px 0px;
+
+		overflow: hidden;
+
+		color: white;
+		/* font-size: 10em; */
+		text-align: left;
+		vertical-align: bottom;
+
+		border: 2px solid #d33a2c;
+
+		background-color: #202020;
+		/* background-attachment: ; */
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+
+		box-shadow: 0px 8px 10px rgba(0,0,0,0.4);
+		/* border-radius: 0px; */
+
+		transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+	}
+
+	.boxtitle {
 		align-self: flex-start;
-		padding: 30px 30px;
+		padding: 20px 20px 30px 20px;
 		margin: 0;
-		width: 100%;
+		width: calc(100% - 40px);
+
+		align-self: flex-end;
+
 		/* border-radius: 0px 0px 20px 20px; */
-		background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0));
+		background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0));
 	}
 
-	.subbox {
+	/* ///////////////////////////////////////////////////////////////////////////////// */
+
+
+	.item {
 		display: flex;
 		margin: 10px;
 		height: 340px;
 		width: 100%;
-		max-width: 800px;
+		min-width: 250px;
+		max-width: 300px;
 		padding: 0px 0px 0px 0px;
 
 		color: white;
-		font-size: 10em;
+		/* font-size: 10em; */
 		text-align: left;
 		vertical-align: bottom;
 
-		border: 2px solid #d33a2c;
+		border: 2px solid rgba(255,255,255,0.1);
 
 		background-color: #202020;
 		/* background-attachment: ; */
@@ -124,58 +187,155 @@
 		background-size: cover;
 
 		box-shadow: 0px 8px 10px rgba(0,0,0,0.4);
-		/* border-radius: 0px; */
-
-		transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-	}
-	.subbox:hover {
-		transform: scale(1.08);
-	}
-	.subbox:active {
-		transform: scale(0.98);
-	}
-
-	.comingsoonbox {
-		display: flex;
-		margin: 10px;
-		height: 340px;
-		width: 340px;
-		padding: 30px 0px 0px 0px;
-
-		color: white;
-		font-size: 10em;
-		text-align: center;
-		vertical-align: bottom;
-
-		background-color: rgba(0,0,0,0.1);
-		border: 5px solid rgba(255,255,255,0.1);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-
-		box-shadow: inset 0px 8px 30px rgba(0,0,0,0.2);
-
 		border-radius: 20px;
 
 		transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 	}
-
-	.comingsoonbox:hover {
-		box-shadow: inset 0px 4px 15px rgba(0,0,0,0.2);
-		background-color: rgba(0,0,0,0.05);
+	.item:hover {
+		transform: scale(1.04);
+	}
+	.item:active {
+		transform: scale(0.98);
 	}
 
-	.comingsoonbox:active {
-		box-shadow: inset 0px 15px 50px rgba(0,0,0,0.4);
-		background-color: rgba(0,0,0,0.15);
-	}
+	.itemtitle {
+		text-align: center;
 
-	.comingsoontitle {
-		align-self: flex-end;
-		padding: 30px 30px;
-		margin: 0;
 		width: 100%;
-		border-radius: 0px 0px 20px 20px;
+		/* background-color: green; */
+		margin: 0;
+		padding-top: 20px;
+		font-size: 30px !important;
+
+		border-radius: 19px 19px 0px 0px;
+
+		height: 25%;
+
+		background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0));
+	}
+
+	.socialitem {
+		display: flex;
+		margin: 10px;
+		height: 140px;
+		width: 100px;
+		/* min-width: 300px; */
+		/* max-width: 300px; */
+		padding: 0px 0px 0px 0px;
+
+		color: white;
+		/* font-size: 10em; */
+		text-align: left;
+		vertical-align: bottom;
+
+		border: 2px solid rgba(255,255,255,0.1);
+
+		background-color: #202020;
+		/* background-attachment: ; */
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+
+		box-shadow: 0px 8px 10px rgba(0,0,0,0.4);
+		border-radius: 20px;
+
+		transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+	}
+	.socialitem:hover {
+		transform: scale(1.04);
+	}
+	.socialitem:active {
+		transform: scale(0.98);
+	}
+
+	.socialitemtitle {
+		text-align: center;
+
+		width: 100%;
+		/* background-color: green; */
+		margin: 0;
+		padding-top: 20px;
+
+		font-size: 20px;
+
+		border-radius: 19px 19px 0px 0px;
+
+		height: 25%;
+
+		background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0));
+	}
+
+	.aboutcontent {
+		padding: 0px 20px;
+	}
+
+	/* ///////////////////////////////////////////////////////////////////////////////// */
+
+	/* iPHONE 8 PLUS WIDTH AND UNDER */
+	@media only screen and (max-width: 414px) {
+		body {
+			padding: 40px 2px 0px 2px !important;
+			margin: 0;
+		}
+
+		h1 {
+			font-size: 40px !important;
+			padding: 0px 10px 20px;
+		}
+
+		p {
+			font-size: 25px !important;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.headerbanner {
+			height: 150px;
+		}
+
+		.item {
+			display: flex;
+			margin: 10px;
+			height: 120px;
+			width: 100%;
+			min-width: 250px;
+			max-width: 300px;
+		}
+	}
+
+	@media only screen and (max-height: 414px) {
+		body {
+			padding: 40px 2px 0px 2px !important;
+			margin: 0;
+		}
+
+		h1 {
+			font-size: 40px !important;
+			padding: 0px 10px 20px;
+		}
+
+		p {
+			font-size: 25px !important;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.headerbanner {
+			height: 200px;
+		}
+
+		.item {
+			display: flex;
+			margin: 10px;
+			height: 120px;
+			width: 100%;
+			min-width: 250px;
+			max-width: 300px;
+		}
 	}
 
 	@media only screen and (max-width: 600px) {
@@ -201,47 +361,79 @@
 
 	}
 
-	@media only screen and (min-width: 1000px) {
-
+	@media only screen and (min-width: 1523px) {
+		.headerbanner {
+			/* max-width: 700px; */
+			max-width: 1423px;
+			height: 700px;
+		}
 	}
 
 	</style>
 </head>
 <body>
 	<h1>Games Manga Anime Society</h1>
-	<div class="container">
 
+	<div class="flexcontainer">
+
+		<div class="headerbanner" target="_blank" style="background-image: url(img/podcast.png);">
+		</div>
+	</div>
+
+	<div class="flexcontainer">
 		<div class="box" target="_blank">
-			<p class="title">Website coming soon!</p>
+			<p class="boxtitle">Socials</p>
 
-			<!-- <a class="subbox" href="https://forums.rockbox.org/index.php?topic=53574" target="_blank" style="background-image: url(img/freshOS.jpg);">
-				<p class="subtitle">FreshOS</p>
-			</a> -->
+			<div class="innerflexcontainer">
 
+				<a class="socialitem" href="" target="_blank" style="background-image: url(img/testimg.png);">
+					<div class="socialitemtitle">discord</div>
+				</a>
+
+				<a class="socialitem" href="" target="_blank" style="background-image: url(img/testimg.png);">
+					<div class="socialitemtitle">insta</div>
+				</a>
+
+				<a class="socialitem" href="" target="_blank" style="background-image: url(img/testimg.png);">
+					<div class="socialitemtitle">facebook</div>
+				</a>
+
+				<a class="socialitem" href="" target="_blank" style="background-image: url(img/testimg.png)";>
+					<img src="testimg.png" alt=""></img>
+					<div class="socialitemtitle">rusu</div>
+				</a>
+			</div>
 		</div>
 
 		<div class="box" target="_blank">
-			<p class="title">Socials</p>
+			<p class="boxtitle">Sponsors</p>
 
-			<!-- <a class="subbox" href="https://forums.rockbox.org/index.php?topic=53574" target="_blank" style="background-image: url(img/freshOS.jpg);">
-				<p class="subtitle">FreshOS</p>
-			</a> -->
+			<div class="innerflexcontainer">
 
+				<a class="item" href="" style="background-image: url(img/testimg.png);">
+					<div class="itemtitle">place</div>
+				</a>
+
+				<a class="item" href="" style="background-image: url(img/testimg.png);">
+					<div class="itemtitle">place</div>
+				</a>
+
+				<a class="item" href="" style="background-image: url(img/testimg.png);">
+					<div class="itemtitle">place</div>
+				</a>
+			</div>
 		</div>
 
-		<div class="box" target="_blank">
-			<p class="title">Sponsors</p>
+		<div class="flexcontainer">
+
+			<div class="headerbanner" target="_blank">
+				<p class="boxtitle">About</p>
+				<div class="aboutcontent">
+					<p>hello its GMAS.</p>
+				</div>
+			</div>
 		</div>
 
-	<!--
-		<a class="box" href="https://forums.rockbox.org/index.php?topic=53574" target="_blank" style="background-image: url(img/freshOS.jpg);">
-			<p class="title">FreshOS</p>
-		</a>
-	-->
-
-		<!-- <a class="comingsoonbox" href="https://www.instagram.com/yyuuiko_design/" target="_blank" rel="noopener noreferrer" style="background-image: url(img/comingsoon.png);">
-			<p class="comingsoontitle">More Coming Soon! Follow to keep updated.</p>
-		</a> -->
 </div>
 </body>
 </html>
