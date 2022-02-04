@@ -30,7 +30,7 @@
 	body {
 		font-family: Kollektif;
 		background-color: #000000;
-		transition: all 1s cubic-bezier(0.85, 0, 0.15, 1);
+		transition: all 1s cubic-bezier(0.5, 0, 0.15, 1);
 		color: #d33a2c;
 		padding: 30px;
 		font-size: 12px;
@@ -43,7 +43,7 @@
 	}
 
 	p {
-		font-size: 20px;
+		font-size: 15pt;
 	}
 
 	a {
@@ -114,7 +114,7 @@
 		transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 	}
 	.headerbanner:hover {
-		border-color: white;
+		border: 5px solid white;
 	}
 	.headerbanner:active {
 			transform: scale(0.96);
@@ -154,6 +154,8 @@
 		padding: 20px 20px 30px 20px;
 		margin: 0;
 		width: calc(100% - 40px);
+
+		font-size: 30px;
 
 		align-self: flex-end;
 
@@ -284,7 +286,7 @@
 		}
 
 		p {
-			font-size: 25px !important;
+			/* font-size: 25px !important; */
 		}
 
 		a {
@@ -317,7 +319,7 @@
 		}
 
 		p {
-			font-size: 25px !important;
+			/* font-size: 25px !important; */
 		}
 
 		a {
@@ -329,8 +331,7 @@
 		}
 
 		.item {
-			display: flex;
-			margin: 10px;
+			/* margin: 10px; */
 			height: 120px;
 			width: 100%;
 			min-width: 250px;
@@ -349,7 +350,7 @@
 		}
 
 		p {
-			font-size: 25px !important;
+			/* font-size: 25px !important; */
 		}
 
 		a {
@@ -357,8 +358,14 @@
 		}
 	}
 
-	@media only screen and (max-width: 800px) {
-
+	@media only screen and (max-width: 749px) {
+		.item {
+			margin: 20px;
+			/* height: 120px; */
+			/* width: 100%; */
+			min-width: 250px;
+			max-width: 100%;
+		}
 	}
 
 	@media only screen and (min-width: 1523px) {
@@ -386,22 +393,27 @@
 
 			<div class="innerflexcontainer">
 
-				<a class="socialitem" href="" target="_blank" style="background-image: url(img/testimg.png);">
+				<a class="socialitem" href="" style="background-image: url(img/testimg.png);">
 					<div class="socialitemtitle">discord</div>
 				</a>
 
-				<a class="socialitem" href="" target="_blank" style="background-image: url(img/testimg.png);">
+				<a class="socialitem" href="" style="background-image: url(img/testimg.png);">
 					<div class="socialitemtitle">insta</div>
 				</a>
 
-				<a class="socialitem" href="" target="_blank" style="background-image: url(img/testimg.png);">
+				<a class="socialitem" href="" style="background-image: url(img/testimg.png);">
 					<div class="socialitemtitle">facebook</div>
 				</a>
 
-				<a class="socialitem" href="" target="_blank" style="background-image: url(img/testimg.png)";>
+				<a class="socialitem" href="" style="background-image: url(img/testimg.png)";>
 					<img src="testimg.png" alt=""></img>
 					<div class="socialitemtitle">rusu</div>
 				</a>
+
+				<!-- <a class="socialitem" href="" target="_blank" style="background-image: url(img/testimg.png)";>
+					<img src="testimg.png" alt=""></img>
+					<div class="socialitemtitle">rusu</div>
+				</a> -->
 			</div>
 		</div>
 
@@ -411,15 +423,43 @@
 			<div class="innerflexcontainer">
 
 				<a class="item" href="" style="background-image: url(img/testimg.png);">
-					<div class="itemtitle">place</div>
+					<div class="itemtitle">Anime Town</div>
 				</a>
 
 				<a class="item" href="" style="background-image: url(img/testimg.png);">
-					<div class="itemtitle">place</div>
+					<div class="itemtitle">Samurai Punk</div>
 				</a>
 
 				<a class="item" href="" style="background-image: url(img/testimg.png);">
-					<div class="itemtitle">place</div>
+					<div class="itemtitle">Ippudo</div>
+				</a>
+
+				<a class="item" href="" style="background-image: url(img/testimg.png);">
+					<div class="itemtitle">Madman</div>
+				</a>
+
+				<a class="item" href="" style="background-image: url(img/testimg.png);">
+					<div class="itemtitle">Zen Gaming</div>
+				</a>
+
+				<a class="item" href="" style="background-image: url(img/testimg.png);">
+					<div class="itemtitle">Critical Hit</div>
+				</a>
+
+				<a class="item" href="" style="background-image: url(img/testimg.png);">
+					<div class="itemtitle">Milksha</div>
+				</a>
+
+				<a class="item" href="" style="background-image: url(img/testimg.png);">
+					<div class="itemtitle">Neko Cards</div>
+				</a>
+
+				<a class="item" href="" style="background-image: url(img/testimg.png);">
+					<div class="itemtitle">One Stop Anime</div>
+				</a>
+
+				<a class="item" href="" style="background-image: url(img/testimg.png);">
+					<div class="itemtitle">RUSU</div>
 				</a>
 			</div>
 		</div>
