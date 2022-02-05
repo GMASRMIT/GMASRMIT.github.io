@@ -371,7 +371,7 @@
 
 	/* /// MODIFIERS ////////////////////////////////////////////////////////////////////////////// */
 
-	/*█████████████████████████████████████████████████ SHOW/HIDE MODIFIERS █████ */
+	/*█████████████████████████████████████████████████ INTERACTION MODIFIERS █████ */
 
 	.hidden {
 		opacity: 0;
@@ -383,6 +383,11 @@
 		cursor: none !important;
 		pointer-events: none !important;
 		user-select: none !important;
+	}
+
+	.nointeract {
+		pointer-events: none;
+		-webkit-pointer-events: none;
 	}
 
 	/*█████████████████████████████████████████████████ RESPONSIVE MODIFIERS █████ */
@@ -496,7 +501,9 @@
 
 	<div class="flexcontainer">
 
-		<div class="headerbanner" target="_blank" style="background-image: url(img/podcast.png);">
+		<div class="headerbanner" target="_blank" style="background-image: url(img/podcast.png);" onclick="permashowwindow('popFeatured')">
+			<p class="boxtitle">Upcoming Event</p>
+
 		</div>
 
 	</div>
@@ -507,26 +514,30 @@
 
 			<div class="innerflexcontainer">
 
-				<a class="socialitem" style="background-image: url(img/testimg.png);">
+				<a class="socialitem" style="background-image: url(img/testimg.png);" href="NEEDLINK" target="_blank">
 					<div class="socialitemtitle">discord</div>
 				</a>
 
-				<a class="socialitem" style="background-image: url(img/testimg.png);">
+				<a class="socialitem" style="background-image: url(img/testimg.png);" href="https://www.facebook.com/gmasrmit" target="_blank">
 					<div class="socialitemtitle">facebook</div>
 				</a>
 
-				<a class="socialitem" style="background-image: url(img/testimg.png);">
+				<a class="socialitem" style="background-image: url(img/testimg.png);" href="https://www.instagram.com/rmitgmas" target="_blank">
 					<div class="socialitemtitle">insta</div>
 				</a>
 
-				<a class="socialitem" style="background-image: url(img/testimg.png);">
+				<a class="socialitem" style="background-image: url(img/testimg.png);" href="https://www.twitch.tv/rmitgmas" target="_blank">
 					<!-- <img src="testimg.png" alt=""></img> -->
 					<div class="socialitemtitle">twitch</div>
 				</a>
 
-				<a class="socialitem" style="background-image: url(img/testimg.png);">
-					<div class="socialitemtitle">youtube</div>
+				<a class="socialitem" style="background-image: url(img/testimg.png);" href="mailto:gmas.club@rmit.edu.au" target="_blank">
+					<div class="socialitemtitle">email</div>
 				</a>
+<!--
+				<a class="socialitem" style="background-image: url(img/testimg.png);" href="" target="_blank">
+					<div class="socialitemtitle">youtube</div>
+				</a> -->
 
 				<!-- <a class="socialitem" style="background-image: url(img/testimg.png);">
 					<div class="socialitemtitle">twitter</div>
@@ -548,43 +559,43 @@
 
 			<div class="innerflexcontainer">
 
-				<a class="item" style="background-image: url(img/spsrMadman.png);" onclick="permashowwindow('popup1')">
+				<a class="item" style="background-image: url(img/spsrMadman.png);" onclick="permashowwindow('popMadman')">
 					<div class="itemtitle">Madman</div>
 				</a>
 
-				<a class="item" style="background-image: url(img/spsrZen.jpg);">
+				<a class="item" style="background-image: url(img/spsrZen.jpg);" onclick="permashowwindow('popZen')">
 					<div class="itemtitle">Zen Gaming</div>
 				</a>
 
-				<a class="item" style="background-image: url(img/spsrIppudo.jpg);">
+				<a class="item" style="background-image: url(img/spsrIppudo.jpg);" onclick="permashowwindow('popIppudo')">
 					<div class="itemtitle">Ippudo</div>
 				</a>
 
-				<a class="item" style="background-image: url(img/spsrMilksha.jpg);">
+				<a class="item" style="background-image: url(img/spsrMilksha.jpg);" onclick="permashowwindow('popMilksha')">
 					<div class="itemtitle">Milksha</div>
 				</a>
 
-				<a class="item" style="background-image: url(img/spsrSamurai.jpg);">
+				<a class="item" style="background-image: url(img/spsrSamurai.jpg);" onclick="permashowwindow('popSamurai')">
 					<div class="itemtitle">Samurai Punk</div>
 				</a>
 
-				<a class="item" style="background-image: url(img/spsrAnimeTown.png);">
+				<a class="item" style="background-image: url(img/spsrAnimeTown.png);" onclick="permashowwindow('popTown')">
 					<div class="itemtitle">Anime Town</div>
 				</a>
 
-				<a class="item" style="background-image: url(img/spsrCriticalHit2.jpg);">
+				<a class="item" style="background-image: url(img/spsrCriticalHit2.jpg);" onclick="permashowwindow('popCritical')">
 					<div class="itemtitle">Critical Hit</div>
 				</a>
 
-				<a class="item" style="background-image: url(img/spsrOneStop.jpg);">
+				<a class="item" style="background-image: url(img/spsrOneStop.jpg);" onclick="permashowwindow('popOne')">
 					<div class="itemtitle">One Stop Anime</div>
 				</a>
 
-				<a class="item" style="background-image: url(img/spsrNeko.jpg);">
+				<a class="item" style="background-image: url(img/spsrNeko.jpg);" onclick="permashowwindow('popNeko')">
 					<div class="itemtitle">Neko Cards</div>
 				</a>
 
-				<a class="item" style="background-image: url(img/spsrRUSU.jpg);">
+				<a class="item" style="background-image: url(img/spsrRUSU.jpg);" onclick="permashowwindow('popRusu')">
 					<div class="itemtitle">RUSU</div>
 				</a>
 			</div>
@@ -592,7 +603,7 @@
 
 		<div class="flexcontainer">
 
-			<div class="headerbanner" target="_blank">
+			<div class="headerbanner nointeract" target="_blank">
 				<p class="boxtitle">About</p>
 				<div class="aboutcontent">
 					<p>hello its GMAS.</p>
@@ -600,11 +611,31 @@
 			</div>
 		</div>
 
-		<!-- █████████████████████████████████████████ STORY WINDOW MODALS ███ -->
+		<!-- █████████████████████████████████████████ POPUP WINDOW MODALS ███ -->
 
-		<!-- ---------------------- 1 --------- -->
-		 <!-- hidden goneReducedToAtoms -->
-		<div class="storyoverlay" id="popup1" onclick="permahidewindow('popup1');">
+		<!-- ---------------------- FEATURED EVENT --------- -->
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popFeatured" onclick="permahidewindow('popFeatured');">
+			<div class="storywindow">
+				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">Featured Event</h1>
+				<h2 style="text-align: center; margin-bottom: 50px;">a fun thing.</h2>
+
+				<p>
+					date time bla bla bla<br>
+					What a deal!.<br>
+				</p>
+
+				<a class="linkbutton windowitem" href="https://www.google.com.au/forms/about/" target="_blank">fill form</a>
+
+				<iframe class="mapframe windowitem" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
+
+				<p>
+					A lovley description.<br>
+				</p>
+			</div>
+		</div>
+
+		<!-- ---------------------- MADMAN --------- -->
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popMadman" onclick="permahidewindow('popMadman');">
 			<div class="storywindow">
 				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">Madman</h1>
 				<h2 style="text-align: center; margin-bottom: 50px;">Movies and stuff.</h2>
@@ -614,7 +645,196 @@
 					What a deal!.<br>
 				</p>
 
-				<a class="linkbutton windowitem" href="https://www.madman.com.au/actions/channel.do?method=view" target="_blank">visit website</a>
+				<a class="linkbutton windowitem" href="https://www.madman.com.au/actions/channel.do?method=view" target="_blank">www.madman.com.au</a>
+
+				<iframe class="mapframe windowitem" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
+
+				<p>
+					A lovley description.<br>
+				</p>
+			</div>
+		</div>
+
+		<!-- ---------------------- ZENGAMING --------- -->
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popZen" onclick="permahidewindow('popZen');">
+			<div class="storywindow">
+				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">ZEN</h1>
+				<h2 style="text-align: center; margin-bottom: 50px;">They sell uhhh good stuffs.</h2>
+
+				<p>
+					u get Free stuff from here.<br>
+					What a deal!.<br>
+				</p>
+
+				<a class="linkbutton windowitem" href="https://zen.gl" target="_blank">zen.gl</a>
+
+				<iframe class="mapframe windowitem" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
+
+				<p>
+					A lovley description.<br>
+				</p>
+			</div>
+		</div>
+
+		<!-- ---------------------- IPPUDO --------- -->
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popIppudo" onclick="permahidewindow('popIppudo');">
+			<div class="storywindow">
+				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">IPPUDO</h1>
+				<h2 style="text-align: center; margin-bottom: 50px;">They sell uhhh good stuffs.</h2>
+
+				<p>
+					u get Free stuff from here.<br>
+					What a deal!.<br>
+				</p>
+
+				<a class="linkbutton windowitem" href="http://ippudo.com.au" target="_blank">ippudo.com.au</a>
+
+				<iframe class="mapframe windowitem" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
+
+				<p>
+					A lovley description.<br>
+				</p>
+			</div>
+		</div>
+
+		<!-- ---------------------- MILKSHA --------- -->
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popMilksha" onclick="permahidewindow('popMilksha');">
+			<div class="storywindow">
+				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">MILKSHA</h1>
+				<h2 style="text-align: center; margin-bottom: 50px;">They sell uhhh good stuffs.</h2>
+
+				<p>
+					u get Free stuff from here.<br>
+					What a deal!.<br>
+				</p>
+
+				<a class="linkbutton windowitem" href="https://milksha.com.sg" target="_blank">milksha.com.sg</a>
+
+				<iframe class="mapframe windowitem" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
+
+				<p>
+					A lovley description.<br>
+				</p>
+			</div>
+		</div>
+
+		<!-- ---------------------- SAMURAI --------- -->
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popSamurai" onclick="permahidewindow('popSamurai');">
+			<div class="storywindow">
+				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">SAMURAI</h1>
+				<h2 style="text-align: center; margin-bottom: 50px;">They sell uhhh good stuffs.</h2>
+
+				<p>
+					u get Free stuff from here.<br>
+					What a deal!.<br>
+				</p>
+
+				<a class="linkbutton windowitem" href="https://store.samuraipunk.com" target="_blank">store.samuraipunk.com</a>
+
+				<iframe class="mapframe windowitem" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
+
+				<p>
+					A lovley description.<br>
+				</p>
+			</div>
+		</div>
+
+		<!-- ---------------------- ANIME TOWN --------- -->
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popTown" onclick="permahidewindow('popTown');">
+			<div class="storywindow">
+				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">ANIME TOWN</h1>
+				<h2 style="text-align: center; margin-bottom: 50px;">They sell uhhh good stuffs.</h2>
+
+				<p>
+					u get Free stuff from here.<br>
+					What a deal!.<br>
+				</p>
+
+				<a class="linkbutton windowitem" href="https://www.animetown.com.au" target="_blank">Shop Online</a>
+
+				<iframe class="mapframe windowitem" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
+
+				<p>
+					A lovley description.<br>
+				</p>
+			</div>
+		</div>
+
+		<!-- ---------------------- CRITICAL HIT --------- -->
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popCritical" onclick="permahidewindow('popCritical');">
+			<div class="storywindow">
+				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">CRITICAL HIT</h1>
+				<h2 style="text-align: center; margin-bottom: 50px;">They sell uhhh good stuffs.</h2>
+
+				<p>
+					u get Free stuff from here.<br>
+					What a deal!.<br>
+				</p>
+
+				<a class="linkbutton windowitem" href="https://criticalhit.com.au" target="_blank">criticalhit.com.au</a>
+
+				<iframe class="mapframe windowitem" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
+
+				<p>
+					A lovley description.<br>
+				</p>
+			</div>
+		</div>
+
+		<!-- ---------------------- ONE STOP ANIME --------- -->
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popOne" onclick="permahidewindow('popOne');">
+			<div class="storywindow">
+				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">ONE STOP ANIME</h1>
+				<h2 style="text-align: center; margin-bottom: 50px;">They sell uhhh good stuffs.</h2>
+
+				<p>
+					u get Free stuff from here.<br>
+					What a deal!.<br>
+				</p>
+
+				<a class="linkbutton windowitem" href="https://onestopanime.com.au" target="_blank">onestopanime.com.au</a>
+
+				<iframe class="mapframe windowitem" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
+
+				<p>
+					A lovley description.<br>
+				</p>
+			</div>
+		</div>
+
+		<!-- ---------------------- NEKOCARDS --------- -->
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popNeko" onclick="permahidewindow('popNeko');">
+			<div class="storywindow">
+				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">NEKOCARDS</h1>
+				<h2 style="text-align: center; margin-bottom: 50px;">They sell uhhh good stuffs.</h2>
+
+				<p>
+					u get Free stuff from here.<br>
+					What a deal!.<br>
+				</p>
+
+				<a class="linkbutton windowitem" href="https://www.nekocards.com.au" target="_blank">www.nekocards.com.au</a>
+
+				<iframe class="mapframe windowitem" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
+
+				<p>
+					A lovley description.<br>
+				</p>
+			</div>
+		</div>
+
+		<!-- ---------------------- RUSU --------- -->
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popRusu" onclick="permahidewindow('popRusu');">
+			<div class="storywindow">
+				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">RUSU</h1>
+				<h2 style="text-align: center; margin-bottom: 50px;">They gib monies.</h2>
+
+				<p>
+					u get Free stuff.<br>
+					What a deal!<br>
+				</p>
+
+				<a class="linkbutton windowitem" href="https://www.rusu.rmit.edu.au" target="_blank">www.rusu.rmit.edu.au</a>
 
 				<iframe class="mapframe windowitem" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
 
