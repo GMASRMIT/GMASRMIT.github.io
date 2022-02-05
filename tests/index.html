@@ -16,10 +16,13 @@
 	<meta name="msapplication-TileColor" content="#000000">
 	<!-- <meta name="theme-color" content="#ffffff"> -->
 
-	<meta name="theme-color" content="#d33a2c" media="(prefers-color-scheme: light)">
-	<meta name="theme-color" content="#d33a2c" media="(prefers-color-scheme: dark)">
+	<meta name="theme-color" content="#000" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="#000" media="(prefers-color-scheme: dark)">
 
 	<style>
+
+	/* /// DEFAULTS ////////////////////////////////////////////////////////////////////////////// */
+
 	@font-face {
 		font-family: 'Kollektif';
 		src: url(fonts/Kollektif.ttf) format('truetype');
@@ -53,7 +56,7 @@
 		text-decoration: none;
 	}
 
-	/* ///////////////////////////////////////////////////////////////////////////////// */
+	/* /// CONTAINER MECHANICS ////////////////////////////////////////////////////////////////////////////// */
 
 	.flexcontainer {
 		display: flex;
@@ -79,7 +82,7 @@
 		/* background-color: pink; */
 	}
 
-	/* ///////////////////////////////////////////////////////////////////////////////// */
+	/* /// CONTAINER STYLES ////////////////////////////////////////////////////////////////////////////// */
 
 	.headerbanner {
 
@@ -166,8 +169,9 @@
 		background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0));
 	}
 
-	/* ///////////////////////////////////////////////////////////////////////////////// */
+	/* /// CONTENT STYLES ////////////////////////////////////////////////////////////////////////////// */
 
+	/*█████████████████████████████████████████████████ SPONSOR ITEM █████ */
 
 	.item {
 		display: flex;
@@ -222,6 +226,8 @@
 		background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0));
 	}
 
+	/*█████████████████████████████████████████████████ SOCIAL ITEMS █████ */
+
 	.socialitem {
 		display: flex;
 		margin: 10px;
@@ -273,11 +279,81 @@
 		background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0));
 	}
 
+	/*█████████████████████████████████████████████████ ABOUT TEXTBOX █████ */
+
 	.aboutcontent {
 		padding: 0px 20px;
 	}
 
-	/* ///////////////////////////////////////////////////////////////////////////////// */
+	/* /// POPUP WINDOWS ////////////////////////////////////////////////////////////////////////////// */
+
+	/*█████████████████████████████████████████████████ BACKGROUND █████ */
+	.storyoverlay {
+		position: fixed;
+		display: block;
+		box-sizing: border-box;
+		width: 100%;
+		height: 100%;
+		z-index: 800;
+
+		top: 0;
+		left: 0;
+
+		opacity: 100%;
+
+		overflow: none;
+
+		background-color: rgba(0, 0, 0, 0.5);
+		background-position: center;
+		background-repeat: no-repeat;
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+
+		border-radius: 0px;
+
+		transition: all 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+	}
+
+	/*█████████████████████████████████████████████████ WINDOW █████ */
+	.storywindow {
+		background-color: #FFF0D5;
+		color: black;
+		border-radius: 20px;
+		border: solid black 4px;
+		/* border-width: 15px 0px 0px 15px; */
+		overflow: scroll;
+
+		padding: 20px;
+		box-sizing: border-box;
+
+		position: absolute;
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		max-width: 500px;
+		max-height: 700px;
+	}
+
+	/* /// MODIFIERS ////////////////////////////////////////////////////////////////////////////// */
+
+	/*█████████████████████████████████████████████████ SHOW/HIDE MODIFIERS █████ */
+
+	.hidden {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+
+	.goneReducedToAtoms {
+		display: none !important;
+		cursor: none !important;
+		pointer-events: none !important;
+		user-select: none !important;
+	}
+
+	/*█████████████████████████████████████████████████ RESPONSIVE MODIFIERS █████ */
 
 	/* iPHONE 8 PLUS WIDTH AND UNDER */
 	@media only screen and (max-width: 414px) {
@@ -440,7 +516,7 @@
 
 			<div class="innerflexcontainer">
 
-				<a class="item" style="background-image: url(img/spsrMadman.png);">
+				<a class="item" style="background-image: url(img/spsrMadman.png);" onclick="permashowwindow('popup1')">
 					<div class="itemtitle">Madman</div>
 				</a>
 
@@ -492,6 +568,74 @@
 			</div>
 		</div>
 
+		<!-- █████████████████████████████████████████ STORY WINDOW MODALS ███ -->
+
+		<!-- ---------------------- 1 --------- -->
+		 <!-- hidden goneReducedToAtoms -->
+		<div class="storyoverlay" id="popup1" onclick="permahidewindow('popup1');">
+			<div class="storywindow">
+				<h1 style="margin-top: 0px;">Madman</h1>
+				<p>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+					Free stuff from madman.<br>
+				</p>
+			</div>
+		</div>
 </div>
+
+<script type="text/javascript">
+/* █ SHOW / HIDE WINDOW AND DISABLE INTERACTION ███████████████████████████████████████████ */
+function permashowwindow(divID) {
+	console.log("showwindow fired");
+	var item = document.getElementById(divID);
+	item.classList.remove('goneReducedToAtoms');
+	setTimeout(function () {
+		item.classList.remove('hidden');
+	}, 10);
+}
+function permahidewindow(divID) {
+	console.log("PERMA hidewindow fired");
+	var item = document.getElementById(divID);
+
+	//reject further interactions while animating.
+	if (item.classList.contains('goneReducedToAtoms')) {
+	}
+	else {
+		item.classList.add('hidden');
+		item.classList.add('nointeract');
+
+		setTimeout(function () {
+			item.classList.remove('nointeract');
+			item.classList.add('goneReducedToAtoms');
+		}, 200);
+	}
+}
+</script>
 </body>
 </html>
