@@ -54,6 +54,7 @@
 
 	a {
 		text-decoration: none;
+		font-size: 15pt;
 	}
 
 	/* /// CONTAINER MECHANICS ////////////////////////////////////////////////////////////////////////////// */
@@ -318,8 +319,8 @@
 	.storywindow {
 		background-color: #FFF0D5;
 		color: black;
-		border-radius: 20px;
-		border: solid black 4px;
+		border-radius: 0px;
+		border: solid red 4px;
 		/* border-width: 15px 0px 0px 15px; */
 		overflow: scroll;
 
@@ -335,6 +336,37 @@
 
 		max-width: 500px;
 		max-height: 700px;
+	}
+
+	.windowitem{
+		margin: 10px 0px;
+		border: 3px solid white;
+	}
+
+
+	.linkbutton {
+		background-color: red;
+		display: block;
+		text-decoration: none;
+		padding: 10px;
+		color: white;
+
+		/* border: 3px solid white; */
+
+		transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+	}
+	.linkbutton:hover {
+		transform: scale(1.04);
+	}
+	.linkbutton:active {
+		transform: scale(0.98);
+	}
+
+	.mapframe {
+		/* border: 3px solid white; */
+		height: 300pt;
+		width: 100%;
+		box-sizing: border-box;
 	}
 
 	/* /// MODIFIERS ////////////////////////////////////////////////////////////////////////////// */
@@ -457,7 +489,6 @@
 			height: 700px;
 		}
 	}
-
 	</style>
 </head>
 <body>
@@ -467,6 +498,7 @@
 
 		<div class="headerbanner" target="_blank" style="background-image: url(img/podcast.png);">
 		</div>
+
 	</div>
 
 	<div class="flexcontainer">
@@ -574,7 +606,8 @@
 		 <!-- hidden goneReducedToAtoms -->
 		<div class="storyoverlay" id="popup1" onclick="permahidewindow('popup1');">
 			<div class="storywindow">
-				<h1 style="margin-top: 0px;">Madman</h1>
+				<h1 style="">Madman</h1>
+
 				<p>
 					Free stuff from madman.<br>
 					Free stuff from madman.<br>
@@ -582,28 +615,14 @@
 					Free stuff from madman.<br>
 					Free stuff from madman.<br>
 					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
-					Free stuff from madman.<br>
+				</p>
+
+				<a class="linkbutton windowitem" href="https://www.madman.com.au/actions/channel.do?method=view" target="_blank">visit website</a>
+
+				<iframe class="mapframe windowitem" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
+
+				<p>
+					A lovley description.<br>
 				</p>
 			</div>
 		</div>
