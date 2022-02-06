@@ -40,6 +40,8 @@
 		color: #d33a2c;
 		padding: 30px;
 		font-size: 12px;
+
+		hyphens: auto;
 	}
 
 	h1 {
@@ -338,6 +340,37 @@
 		max-height: 700px;
 	}
 
+	.storywindow h1 {
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		margin-top: 60px;
+	}
+
+	.storywindow h2 {
+		text-align: center;
+		margin-bottom: 50px;"
+	}
+
+	.exitbtn {
+		display: inline-block;
+		position: fixed;
+		padding: 8px 20px;
+
+		color: red;
+
+		border-radius: 30px;
+		border: 2px solid red;
+		background-color: white;
+
+		transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+	}
+	.exitbtn:hover {
+		transform: scale(1.1);
+	}
+	.exitbtn:active {
+		transform: scale(0.98);
+	}
+
 	.windowitem{
 		margin: 10px 0px;
 		border: 3px solid white;
@@ -618,10 +651,12 @@
 		<!-- █████████████████████████████████████████ POPUP WINDOW MODALS ███ -->
 
 		<!-- ---------------------- FEATURED EVENT --------- -->
-		<div class="storyoverlay hidden goneReducedToAtoms" id="popFeatured" onclick="permahidewindow('popFeatured');">
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popFeatured">
 			<div class="storywindow">
-				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">Upcoming Event</h1>
-				<h2 style="text-align: center; margin-bottom: 50px;">Beach Party.</h2>
+				<a class="exitbtn" onclick="permahidewindow('popFeatured');">exit</a>
+
+				<h1>Upcoming Event</h1>
+				<h2>Beach Party.</h2>
 
 				<p>
 					New Year have just passed and Uni is coming back soon for most, and here we have our first event of the year! <br>
@@ -645,18 +680,17 @@
 				<iframe class="mapframe windowitem" src="https://maps.google.com/maps?q=St%20Kilda%20Beach,%20St%20Kilda%20VIC%203182,%20Australia&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
 
 				<p>
-					Thankyou to @zerotwo_simp and @dingster for the awesome banner art, check out her Instagram here!<br>
-					<br>
-					<a href="https://www.instagram.com/fushiginek0/">https://www.instagram.com/fushiginek0/</a><br>
+					Thankyou to @zerotwo_simp and @dingster for the awesome banner art, check out her Instagram <a href="https://www.instagram.com/fushiginek0/">here</a>!
 				</p>
 			</div>
 		</div>
 
 		<!-- ---------------------- MADMAN --------- -->
-		<div class="storyoverlay hidden goneReducedToAtoms" id="popMadman" onclick="permahidewindow('popMadman');">
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popMadman">
 			<div class="storywindow">
-				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">Madman</h1>
-				<h2 style="text-align: center; margin-bottom: 50px;">Movies and stuff.</h2>
+  			<a class="exitbtn" onclick="permahidewindow('popMadman');">exit</a>
+				<h1>Madman</h1>
+				<h2>Movies and stuff.</h2>
 
 				<p>
 					Free stuff from madman.<br>
@@ -674,10 +708,11 @@
 		</div>
 
 		<!-- ---------------------- ZENGAMING --------- -->
-		<div class="storyoverlay hidden goneReducedToAtoms" id="popZen" onclick="permahidewindow('popZen');">
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popZen">
 			<div class="storywindow">
-				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">ZEN</h1>
-				<h2 style="text-align: center; margin-bottom: 50px;">They sell uhhh good stuffs.</h2>
+  <a class="exitbtn" onclick="permahidewindow('popZen');">exit</a>
+				<h1>ZEN</h1>
+				<h2>They sell uhhh good stuffs.</h2>
 
 				<p>
 					u get Free stuff from here.<br>
@@ -697,10 +732,11 @@
 		</div>
 
 		<!-- ---------------------- IPPUDO --------- -->
-		<div class="storyoverlay hidden goneReducedToAtoms" id="popIppudo" onclick="permahidewindow('popIppudo');">
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popIppudo">
 			<div class="storywindow">
-				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">IPPUDO</h1>
-				<h2 style="text-align: center; margin-bottom: 50px;">They sell uhhh good stuffs.</h2>
+  		<a class="exitbtn" onclick="permahidewindow('popIppudo');">exit</a>
+				<h1>IPPUDO</h1>
+				<h2>They sell uhhh good stuffs.</h2>
 
 				<p>
 					u get Free stuff from here.<br>
@@ -720,10 +756,11 @@
 		</div>
 
 		<!-- ---------------------- MILKSHA --------- -->
-		<div class="storyoverlay hidden goneReducedToAtoms" id="popMilksha" onclick="permahidewindow('popMilksha');">
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popMilksha">
 			<div class="storywindow">
-				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">MILKSHA</h1>
-				<h2 style="text-align: center; margin-bottom: 50px;">They sell uhhh good stuffs.</h2>
+  		<a class="exitbtn" onclick="permahidewindow('popMilksha');">exit</a>
+				<h1>MILKSHA</h1>
+				<h2>They sell uhhh good stuffs.</h2>
 
 				<p>
 					u get Free stuff from here.<br>
@@ -743,10 +780,11 @@
 		</div>
 
 		<!-- ---------------------- SAMURAI --------- -->
-		<div class="storyoverlay hidden goneReducedToAtoms" id="popSamurai" onclick="permahidewindow('popSamurai');">
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popSamurai">
 			<div class="storywindow">
-				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">SAMURAI</h1>
-				<h2 style="text-align: center; margin-bottom: 50px;">They sell uhhh good stuffs.</h2>
+  			<a class="exitbtn" onclick="permahidewindow('popSamurai');">exit</a>
+				<h1>SAMURAI</h1>
+				<h2>They sell uhhh good stuffs.</h2>
 
 				<p>
 					u get Free stuff from here.<br>
@@ -764,10 +802,11 @@
 		</div>
 
 		<!-- ---------------------- ANIME TOWN --------- -->
-		<div class="storyoverlay hidden goneReducedToAtoms" id="popTown" onclick="permahidewindow('popTown');">
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popTown">
 			<div class="storywindow">
-				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">ANIME TOWN</h1>
-				<h2 style="text-align: center; margin-bottom: 50px;">They sell uhhh good stuffs.</h2>
+  			<a class="exitbtn" onclick="permahidewindow('popTown');">exit</a>
+				<h1>ANIME TOWN</h1>
+				<h2>They sell uhhh good stuffs.</h2>
 
 				<p>
 					u get Free stuff from here.<br>
@@ -785,10 +824,11 @@
 		</div>
 
 		<!-- ---------------------- CRITICAL HIT --------- -->
-		<div class="storyoverlay hidden goneReducedToAtoms" id="popCritical" onclick="permahidewindow('popCritical');">
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popCritical">
 			<div class="storywindow">
-				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">CRITICAL HIT</h1>
-				<h2 style="text-align: center; margin-bottom: 50px;">They sell uhhh good stuffs.</h2>
+  			<a class="exitbtn" onclick="permahidewindow('popCritical');">exit</a>
+				<h1>CRITICAL HIT</h1>
+				<h2>They sell uhhh good stuffs.</h2>
 
 				<p>
 					u get Free stuff from here.<br>
@@ -808,10 +848,11 @@
 		</div>
 
 		<!-- ---------------------- ONE STOP ANIME --------- -->
-		<div class="storyoverlay hidden goneReducedToAtoms" id="popOne" onclick="permahidewindow('popOne');">
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popOne">
 			<div class="storywindow">
-				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">ONE STOP ANIME</h1>
-				<h2 style="text-align: center; margin-bottom: 50px;">They sell uhhh good stuffs.</h2>
+  			<a class="exitbtn" onclick="permahidewindow('popOne');">exit</a>
+				<h1>ONE STOP ANIME</h1>
+				<h2>They sell uhhh good stuffs.</h2>
 
 				<p>
 					u get Free stuff from here.<br>
@@ -831,10 +872,11 @@
 		</div>
 
 		<!-- ---------------------- NEKOCARDS --------- -->
-		<div class="storyoverlay hidden goneReducedToAtoms" id="popNeko" onclick="permahidewindow('popNeko');">
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popNeko">
 			<div class="storywindow">
-				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">NEKOCARDS</h1>
-				<h2 style="text-align: center; margin-bottom: 50px;">They sell uhhh good stuffs.</h2>
+  			<a class="exitbtn" onclick="permahidewindow('popNeko');">exit</a>
+				<h1>NEKOCARDS</h1>
+				<h2>They sell uhhh good stuffs.</h2>
 
 				<p>
 					u get Free stuff from here.<br>
@@ -852,10 +894,11 @@
 		</div>
 
 		<!-- ---------------------- RUSU --------- -->
-		<div class="storyoverlay hidden goneReducedToAtoms" id="popRusu" onclick="permahidewindow('popRusu');">
+		<div class="storyoverlay hidden goneReducedToAtoms" id="popRusu">
 			<div class="storywindow">
-				<h1 style="margin-bottom: 0px; padding-bottom: 0px;">RUSU</h1>
-				<h2 style="text-align: center; margin-bottom: 50px;">They gib monies.</h2>
+  			<a class="exitbtn" onclick="permahidewindow('popRusu');">exit</a>
+				<h1>RUSU</h1>
+				<h2>They gib monies.</h2>
 
 				<p>
 					u get Free stuff.<br>
