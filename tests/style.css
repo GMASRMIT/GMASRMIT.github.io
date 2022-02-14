@@ -310,7 +310,8 @@
 		border-radius: 0px;
 		border: solid #e52617 4px;
 
-		overflow: scroll;
+		overflow-x: hidden;
+		overflow-y: scroll;
 
 		/* padding: 20px 0px; */
 		box-sizing: border-box;
@@ -574,4 +575,3 @@
 			height: 700px;
 		}
 	}
-	
