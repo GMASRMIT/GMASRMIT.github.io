@@ -1,0 +1,14 @@
+
+
+
+
+CONVERT ADDRESS TO GOOGLE MAPS LINK
+https://stackoverflow.com/questions/1300838/how-to-convert-an-address-into-a-google-maps-link-not-map
+
+$(document).ready(function () {
+   //Convert address tags to google map links - Michael Jasper 2012
+   $('address').each(function () {
+      var link = "<a href='http://maps.google.com/maps?q=" + encodeURIComponent( $(this).text() ) + "' target='_blank'>" + $(this).text() + "</a>";
+      $(this).html(link);
+   });
+});
