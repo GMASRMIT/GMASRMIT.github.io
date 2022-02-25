@@ -237,6 +237,10 @@
 		transform: scale(0.98);
 	}
 
+	.widecontainer {
+		width: 200px;
+	}
+
 	.socialitemtitle {
 		text-align: center;
 
@@ -266,6 +270,10 @@
 
 		box-shadow: 0px 8px 10px rgba(0,0,0,0.4);
 		border-radius: 20px;
+	}
+
+	.wideimg {
+		width: 200px;
 	}
 
 	/*█████████████████████████████████████████████████ ABOUT TEXTBOX █████ */
