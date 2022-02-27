@@ -499,7 +499,7 @@
 			text-decoration: none;
 		}
 
-		.headerbanner {
+		.banner {
 			height: 150px;
 		}
 
@@ -544,7 +544,7 @@
 			text-decoration: none;
 		}
 
-		.headerbanner {
+		.banner {
 			height: 200px;
 		}
 
@@ -599,7 +599,7 @@
 
 	/* LIMIT SIZE FOR OVERLY LARGE WINDOWS */
 	@media only screen and (min-width: 1523px) {
-		.headerbanner {
+		.banner {
 			/* max-width: 700px; */
 			max-width: 1423px;
 			height: 700px;
