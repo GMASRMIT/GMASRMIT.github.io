@@ -42,7 +42,7 @@
 
 		<!-- This is where you change the banner image name if required.      ADD ' disabled' to CLASS to hide this banner.    -->
 		<!--                                  ⬇︎ SPECIFY IMAGE                ⬇︎ ADD ' disabled'                                -->
-		<div style="background-image: url(img/event.png);" class="headerbanner" onclick="showwindow('popFeatured')">
+		<div style="background-image: url(img/event.png);" class="banner clickablebanner" onclick="showwindow('popFeatured')">
 			<p class="boxtitle">Upcoming Event</p>
 		</div>
 
@@ -51,7 +51,7 @@
 
 		<!-- This is where you change the banner image name if required.        ADD ' disabled' to CLASS to hide this banner.  -->
 		<!--                                  ⬇︎ SPECIFY IMAGE                  ⬇︎ ADD ' disabled'                              -->
-		<div style="background-image: url(img/podcast.png);" class="headerbanner disabled" onclick="showwindow('popPodcast')">
+		<div style="background-image: url(img/podcast.png);" class="banner clickablebanner disabled" onclick="showwindow('popPodcast')">
 			<p class="boxtitle">GMAS PODCAST <br> EPISODE 2</p>
 		</div>
 
@@ -78,30 +78,30 @@
 
 <!-- widecontainer wideimg -->
 				<a class="socialitem" href="https://discord.gg/nk4wteZwgP" target="_blank">
-					<img src="img/testimg.png" alt="discord icon image" class=" socialiconimg"></img>
+					<img src="img/soclDiscord.png" alt="discord icon image" class="socialiconimg"></img>
 					<div class="socialitemtitle">discord</div>
 				</a>
 
 
 				<a class=" socialitem" href="https://www.facebook.com/gmasrmit" target="_blank">
-					<img src="img/testimg.png" alt="discord icon image" class=" socialiconimg"></img>
+					<img src="img/soclFacebook.png" alt="facebook icon image" class="socialiconimg"></img>
 					<div class="socialitemtitle">facebook</div>
 				</a>
 
 
 				<a class="socialitem" href="https://www.instagram.com/rmitgmas" target="_blank">
-					<img src="img/testimg.png" alt="discord icon image" class="socialiconimg"></img>
+					<img src="img/soclInsta.png" alt="instagram icon image" class="socialiconimg"></img>
 					<div class="socialitemtitle">instagram</div>
 				</a>
 
 				<a class="socialitem" href="https://www.twitch.tv/rmitgmas" target="_blank">
-					<img src="img/testimg.png" alt="discord icon image" class="socialiconimg"></img>
+					<img src="img/soclTwitch.png" alt="twitch icon image" class="socialiconimg"></img>
 					<div class="socialitemtitle">twitch</div>
 				</a>
 
 
 				<a class="socialitem" href="mailto:gmas.club@rmit.edu.au" target="_blank">
-					<img src="img/testimg.png" alt="discord icon image" class="socialiconimg"></img>
+					<img src="img/testimg.png" alt="email icon image" class="socialiconimg"></img>
 					<div class="socialitemtitle">email</div>
 				</a>
 
@@ -126,14 +126,6 @@
 				<!--████ SPONSOR TILES ██████████████████████████████████████████████████-->
 
 
-				<a class="item disable-textselect" style="background-image: url(img/spsrMadman.png);" onclick="showwindow('popMadman')">
-					<div class="itemtitle">Madman</div>
-				</a>
-
-				<a class="item disable-textselect" style="background-image: url(img/spsrZen.jpg);" onclick="showwindow('popZen')">
-					<div class="itemtitle">Zen Gaming</div>
-				</a>
-
 				<a class="item disable-textselect" style="background-image: url(img/spsrIppudo.jpg);" onclick="showwindow('popIppudo')">
 					<div class="itemtitle">Ippudo</div>
 				</a>
@@ -146,20 +138,28 @@
 					<div class="itemtitle">Samurai Punk</div>
 				</a>
 
-				<a class="item disable-textselect" style="background-image: url(img/spsrAnimeTown.png);" onclick="showwindow('popTown')">
-					<div class="itemtitle">Anime Town</div>
+				<a class="item disable-textselect" style="background-image: url(img/spsrZen.jpg);" onclick="showwindow('popZen')">
+					<div class="itemtitle">Zen Gaming</div>
 				</a>
 
 				<a class="item disable-textselect" style="background-image: url(img/spsrCriticalHit2.jpg);" onclick="showwindow('popCritical')">
 					<div class="itemtitle">Critical Hit</div>
 				</a>
 
-				<a class="item disable-textselect" style="background-image: url(img/spsrOneStop.jpg);" onclick="showwindow('popOne')">
-					<div class="itemtitle">One Stop Anime</div>
-				</a>
-
 				<a class="item disable-textselect" style="background-image: url(img/spsrNeko.jpg);" onclick="showwindow('popNeko')">
 					<div class="itemtitle">Neko Cards</div>
+				</a>
+
+				<a class="item disable-textselect" style="background-image: url(img/spsrOneStop.jpg);" onclick="showwindow('popOne')">
+					<div class="itemtitle">!! One Stop Anime</div>
+				</a>
+
+				<a class="item disable-textselect" style="background-image: url(img/spsrAnimeTown.png);" onclick="showwindow('popTown')">
+					<div class="itemtitle">!! Anime Town</div>
+				</a>
+
+				<a class="item disable-textselect" style="background-image: url(img/spsrMadman.png);" onclick="showwindow('popMadman')">
+					<div class="itemtitle">Madman</div>
 				</a>
 
 				<a class="item disable-textselect" style="background-image: url(img/spsrRUSU.jpg);" onclick="showwindow('popRusu')">
@@ -184,19 +184,24 @@
 
 		<!-- ████ "ABOUT GMAS" FOOTER ██████████████████████████████████████████████████ -->
 
-		<div class="headerbanner nointeract" target="_blank">
+		<div class="banner unlockheight" target="_blank">
 			<p class="boxtitle">About</p>
 			<div class="aboutcontent">
-				<p>hello its GMAS.</p>
+
+
+
+				<p>
+					<strong>Hello its GMAS!</strong><br>
+					We’re an anime club where all are welcome. Any uni, anywhere, member or not.<br>
+					Feel free to come and join us, member or not. "Everyone is welcome" is our policy, so why not start by <a href="https://discord.gg/nk4wteZwgP" style="text-decoration: underline;">checking out our discord!</a><br>
+					<br>
+					<strong>Activities</strong><br>
+					Come to our Friday Meetups, where we have Anime, Quizzes, Pictionary, Charades, Smash, Mario Kart and Prizes.
+				</p>
+
+
 			</div>
 		</div>
-
-
-
-
-
-
-
 	</div>
 
 
@@ -353,20 +358,15 @@
 		<div class="popupwindow">
 			<a class="exitbtn" onclick="hidewindow('popMadman');">CLOSE</a>
 			<h1>Madman</h1>
-			<h2>Movies and stuff.</h2>
+			<h2>Movies</h2>
 
 			<p>
-				Free stuff from madman.<br>
-				What a deal!.<br>
+				Monthly prize support and various other giveaways<br>
 			</p>
 
 			<a class="linkbutton" href="https://www.madman.com.au/actions/channel.do?method=view" target="_blank">www.madman.com.au</a>
 
 			<!-- <iframe class="mapframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe> -->
-
-			<p>
-				A lovley description.<br>
-			</p>
 		</div>
 	</div>
 
@@ -375,11 +375,10 @@
 		<div class="popupwindow">
 			<a class="exitbtn" onclick="hidewindow('popZen');">CLOSE</a>
 			<h1>ZEN</h1>
-			<h2>They sell uhhh good stuffs.</h2>
+			<h2>Internet and Gaming Cafe</h2>
 
 			<p>
-				u get Free stuff from here.<br>
-				What a deal!.<br>
+				First hour free sessions and discounted booking of Zen Gaming facilities<br>
 			</p>
 
 			<a class="linkbutton" href="https://zen.gl" target="_blank">zen.gl</a>
@@ -387,10 +386,6 @@
 			<iframe class="mapframe"
 			src="https://maps.google.com/maps?q=zen%20gaming%20lounge&t=&z=18&ie=UTF8&iwloc=&output=embed"
 			allowfullscreen="" loading="lazy"></iframe>
-
-			<p>
-				A lovley description.<br>
-			</p>
 		</div>
 	</div>
 
@@ -399,11 +394,13 @@
 		<div class="popupwindow">
 			<a class="exitbtn" onclick="hidewindow('popIppudo');">CLOSE</a>
 			<h1>IPPUDO</h1>
-			<h2>They sell uhhh good stuffs.</h2>
+			<h2>Japanese Dining</h2>
 
 			<p>
-				u get Free stuff from here.<br>
-				What a deal!.<br>
+				With any ramen purchase, get a:<br>
+				• Free Pork Bun<br>
+				• Free 5 Piece Gyoza<br>
+				• $3 Tapioca Series<br>
 			</p>
 
 			<a class="linkbutton" href="http://ippudo.com.au" target="_blank">ippudo.com.au</a>
@@ -411,10 +408,6 @@
 			<iframe class="mapframe"
 			src="https://maps.google.com/maps?q=ippudo&t=&z=18&ie=UTF8&iwloc=&output=embed"
 			allowfullscreen="" loading="lazy"></iframe>
-
-			<p>
-				A lovley description.<br>
-			</p>
 		</div>
 	</div>
 
@@ -423,11 +416,10 @@
 		<div class="popupwindow">
 			<a class="exitbtn" onclick="hidewindow('popMilksha');">CLOSE</a>
 			<h1>MILKSHA</h1>
-			<h2>They sell uhhh good stuffs.</h2>
+			<h2>Bubble Tea</h2>
 
 			<p>
-				u get Free stuff from here.<br>
-				What a deal!.<br>
+				Get 10% off on Milksha products at all outlets.<br>
 			</p>
 
 			<a class="linkbutton" href="https://milksha.com.sg" target="_blank">milksha.com.sg</a>
@@ -435,10 +427,6 @@
 			<iframe class="mapframe"
 			src="https://maps.google.com/maps?q=milksha&t=&z=11&ie=UTF8&iwloc=&output=embed"
 			allowfullscreen="" loading="lazy"></iframe>
-
-			<p>
-				A lovley description.<br>
-			</p>
 		</div>
 	</div>
 
@@ -446,21 +434,16 @@
 	<div class="popupbackground hidden disabled" id="popSamurai">
 		<div class="popupwindow">
 			<a class="exitbtn" onclick="hidewindow('popSamurai');">CLOSE</a>
-			<h1>SAMURAI</h1>
-			<h2>They sell uhhh good stuffs.</h2>
+			<h1>SAMURAI PUNK</h1>
+			<h2>T-shirts and Apparel</h2>
 
 			<p>
-				u get Free stuff from here.<br>
-				What a deal!.<br>
+				Get 20% off storewide.<br>
 			</p>
 
 			<a class="linkbutton" href="https://store.samuraipunk.com" target="_blank">Shop Online</a>
 
 			<!-- <iframe class="mapframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe> -->
-
-			<p>
-				A lovley description.<br>
-			</p>
 		</div>
 	</div>
 
@@ -469,20 +452,16 @@
 		<div class="popupwindow">
 			<a class="exitbtn" onclick="hidewindow('popTown');">CLOSE</a>
 			<h1>ANIME TOWN</h1>
-			<h2>They sell uhhh good stuffs.</h2>
+			<h2>Anime Figures, Models, Merchandise and More</h2>
 
 			<p>
-				u get Free stuff from here.<br>
-				What a deal!.<br>
+				10% off for members.<br>
+				Discount Code: ?????????????????????????????????????
 			</p>
 
 			<a class="linkbutton" href="https://www.animetown.com.au" target="_blank">Shop Online</a>
 
 			<!-- <iframe class="mapframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe> -->
-
-			<p>
-				A lovley description.<br>
-			</p>
 		</div>
 	</div>
 
@@ -491,11 +470,10 @@
 		<div class="popupwindow">
 			<a class="exitbtn" onclick="hidewindow('popCritical');">CLOSE</a>
 			<h1>CRITICAL HIT</h1>
-			<h2>They sell uhhh good stuffs.</h2>
+			<h2>Media, Books, Games, Plushies, Figures and More</h2>
 
 			<p>
-				u get Free stuff from here.<br>
-				What a deal!.<br>
+				Online and instore 5% discount<br>
 			</p>
 
 			<a class="linkbutton" href="https://criticalhit.com.au" target="_blank">criticalhit.com.au</a>
@@ -503,10 +481,6 @@
 			<iframe class="mapframe"
 			src="https://maps.google.com/maps?q=critical%20hit&t=&z=18&ie=UTF8&iwloc=&output=embed"
 			allowfullscreen="" loading="lazy"></iframe>
-
-			<p>
-				A lovley description.<br>
-			</p>
 		</div>
 	</div>
 
@@ -515,11 +489,10 @@
 		<div class="popupwindow">
 			<a class="exitbtn" onclick="hidewindow('popOne');">CLOSE</a>
 			<h1>ONE STOP ANIME</h1>
-			<h2>They sell uhhh good stuffs.</h2>
+			<h2>Trinkets, Figures and more</h2>
 
 			<p>
-				u get Free stuff from here.<br>
-				What a deal!.<br>
+				????????????????????????????????????
 			</p>
 
 			<a class="linkbutton" href="https://onestopanime.com.au" target="_blank">onestopanime.com.au</a>
@@ -527,10 +500,6 @@
 			<iframe class="mapframe"
 			src="https://maps.google.com/maps?q=one%20stop%20anime&t=&z=18&ie=UTF8&iwloc=&output=embed"
 			allowfullscreen="" loading="lazy"></iframe>
-
-			<p>
-				A lovley description.<br>
-			</p>
 		</div>
 	</div>
 
@@ -539,20 +508,28 @@
 		<div class="popupwindow">
 			<a class="exitbtn" onclick="hidewindow('popNeko');">CLOSE</a>
 			<h1>NEKOCARDS</h1>
-			<h2>They sell uhhh good stuffs.</h2>
+			<h2>Trading Card Games</h2>
 
 			<p>
-				u get Free stuff from here.<br>
-				What a deal!.<br>
+				<strong>1. Buy 1 box get 1 pack of KMC Sleeves free!</strong><br>
+				When buying Vanguard packs, present your GMAS membership card. <br>
+				Receive 1 pack of KMC Sleeves for every box of non-discounted boosters.
 			</p>
+
+			<p style="padding-bottom: 0px;">
+				<strong>2. Neko Starter</strong><br>
+				Get a Free Playmat when you:
+			</p>
+			<ul>
+				<li>Join a tournament for the first time with your GMAS membership card.</li>
+				<li>Sign up to the Neko Loyalty program.</li>
+			</ul>
+
+			<a class="linkbutton" href="https://www.nekocards.com.au" target="_blank">nekocards.com.au</a>
 
 			<iframe class="mapframe"
 			src="https://maps.google.com/maps?q=neko%20cards&t=&z=18&ie=UTF8&iwloc=&output=embed"
 			allowfullscreen="" loading="lazy"></iframe>
-
-			<p>
-				A lovley description.<br>
-			</p>
 		</div>
 	</div>
 
@@ -561,20 +538,15 @@
 		<div class="popupwindow">
 			<a class="exitbtn" onclick="hidewindow('popRusu');">CLOSE</a>
 			<h1>RUSU</h1>
-			<h2>They gib monies.</h2>
+			<h2>RMIT University Student Union</h2>
 
 			<p>
-				u get Free stuff.<br>
-				What a deal!<br>
+				GMAS is a RUSU club, we thank the Student Union for helping with management and funding our events and merch!<br>
 			</p>
 
 			<a class="linkbutton" href="https://www.rusu.rmit.edu.au" target="_blank">www.rusu.rmit.edu.au</a>
 
 			<!-- <iframe class="mapframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe> -->
-
-			<p>
-				A lovley description.<br>
-			</p>
 		</div>
 	</div> <!--flexcontainer-->
 
