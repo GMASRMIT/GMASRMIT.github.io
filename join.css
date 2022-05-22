@@ -610,6 +610,12 @@
 		}
 	}
 
+	/* =========================================== */
+
+	.spotifyembed {
+		
+	}
+
 	/* iPHONE 8 PLUS LANDSCAPE AND NARROW HEIGHT */
 	@media only screen and (max-height: 414px) {
 		body {
