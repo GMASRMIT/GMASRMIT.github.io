@@ -42,12 +42,13 @@
 	}
 
 	p {
-		font-size: 12pt;
+		font-size: 15pt;
 	}
 
 	a {
 		text-decoration: none;
 		font-size: 15pt;
+		font-weight: bold;
 		color: white;
 	}
 
@@ -613,7 +614,7 @@
 	/* =========================================== */
 
 	.spotifyembed {
-		
+
 	}
 
 	/* iPHONE 8 PLUS LANDSCAPE AND NARROW HEIGHT */
