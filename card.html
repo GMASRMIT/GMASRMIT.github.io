@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Join GMAS!</title>
+	<title>GMAS - Memebership Card Info</title>
 
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
@@ -12,44 +12,18 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
-	<!-- <link rel="mask-icon" href="safari-pinned-tab.svg" color="#F4AFAD"> -->
-	<meta name="msapplication-TileColor" content="#F4AFAD">
+	<!-- <link rel="mask-icon" href="safari-pinned-tab.svg" color="#222222"> -->
+	<meta name="msapplication-TileColor" content="#000000">
 
-	<meta name="theme-color" content="#F4AFAD" media="(prefers-color-scheme: light)">
-	<meta name="theme-color" content="#F4AFAD" media="(prefers-color-scheme: dark)">
+	<meta name="theme-color" content="#000" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="#000" media="(prefers-color-scheme: dark)">
 
-	<link rel="stylesheet" href="join.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<div class="title">WELCOME TO GMAS!!</div>
-
-	<!-- ████ "ABOUT GMAS" FOOTER ██████████████████████████████████████████████████ -->
-
-	<div class="flexcontainer">
-	<div class="banner unlockheight" target="_blank">
-		<h1 class="boxtitle">About</h1>
-		<div class="aboutcontent">
-
-
-
-			<p>
-				<strong>Hello its GMAS!</strong><br>
-				We’re an anime club where all are welcome. Any uni, anywhere, member or not.<br>
-				Feel free to come and join us! "Everyone is welcome" is our policy, so why not start by <a href="https://discord.gg/nk4wteZwgP" style="text-decoration: underline; color: red;">checking out our discord?</a><br>
-				<br>
-				<strong>Activities</strong><br>
-				Come to our Friday Meetups, where we have Anime, Quizzes, Pictionary, Charades, Smash, Mario Kart and Prizes.<br>
-				<br>
-				<strong>Big Events</strong><br>
-				We've got Midyear Camp, Christmas Parties, meetup events and collabs with other uni Anime Clubs!<br>
-			</p>
-
-
-
-		</div>
-	</div>
-</div>
+	<h1>MEMBERSHIP CARD</h1>
+	<!-- <h1>GAMES MANGA ANIME SOCIETY</h1> -->
 
 	<div class="flexcontainer">
 
@@ -69,12 +43,8 @@
 
 		<!-- This is where you change the banner image name if required.      ADD ' disabled' to CLASS to hide this banner.    -->
 		<!--                                  ⬇︎ SPECIFY IMAGE                ⬇︎ ADD ' disabled'                                -->
-		<div style="background-image: url(img/signup.png);" class="banner clickablebanner" onclick="showwindow('popFeatured')">
-			<h1 class="boxtitle">BECOME A <br> MEMBER</h1>
-		</div>
-
-		<div style="background-image: url(img/purchase.png);" class="banner clickablebanner" onclick="showwindow('popPurchase')">
-			<h1 class="boxtitle" style="color: white;">PURCHASE <br> DISCOUNT CARD</h1>
+		<div style="background-image: url(img/event.png);" class="banner clickablebanner disabled" onclick="showwindow('popFeatured')">
+			<p class="boxtitle">Upcoming Event</p>
 		</div>
 
 
@@ -83,7 +53,7 @@
 		<!-- This is where you change the banner image name if required.        ADD ' disabled' to CLASS to hide this banner.  -->
 		<!--                                  ⬇︎ SPECIFY IMAGE                  ⬇︎ ADD ' disabled'                              -->
 		<div style="background-image: url(img/podcast.png);" class="banner clickablebanner disabled" onclick="showwindow('popPodcast')">
-			<h1 class="boxtitle">GMAS PODCAST <br> EPISODE 2</h1>
+			<p class="boxtitle">GMAS PODCAST <br> EPISODE 2</p>
 		</div>
 
 
@@ -96,48 +66,45 @@
 	</div>
 
 	<div class="flexcontainer">
+		<div class="box" target="_blank">
+			<p class="boxtitle">Socials</p>
 
-
-		<div class="flexcontainer">
-			<div class="box" target="_blank">
-				<h1 class="boxtitle">Join our Socials!</h1>
-
-				<div class="innerflexcontainer">
+			<div class="innerflexcontainer">
 
 
 
 
 
-					<!--████ SOCIAL BUTTONS ██████████████████████████████████████████████████-->
+				<!--████ SOCIAL BUTTONS ██████████████████████████████████████████████████-->
 
-					<!-- widecontainer wideimg -->
-					<a class="socialitem" href="https://discord.gg/nk4wteZwgP" target="_blank">
-						<img src="img/soclDiscord.png" alt="discord icon image" class="socialiconimg"></img>
-						<div class="socialitemtitle">discord</div>
-					</a>
-
-
-					<a class=" socialitem" href="https://www.facebook.com/gmasrmit" target="_blank">
-						<img src="img/soclFacebook.png" alt="facebook icon image" class="socialiconimg"></img>
-						<div class="socialitemtitle">facebook</div>
-					</a>
+				<!-- widecontainer wideimg -->
+				<a class="socialitem" href="https://discord.gg/nk4wteZwgP" target="_blank">
+					<img src="img/soclDiscord.png" alt="discord icon image" class="socialiconimg"></img>
+					<div class="socialitemtitle">discord</div>
+				</a>
 
 
-					<a class="socialitem" href="https://www.instagram.com/rmitgmas" target="_blank">
-						<img src="img/soclInsta.png" alt="instagram icon image" class="socialiconimg"></img>
-						<div class="socialitemtitle">instagram</div>
-					</a>
-
-					<a class="socialitem" href="https://www.twitch.tv/rmitgmas" target="_blank">
-						<img src="img/soclTwitch.png" alt="twitch icon image" class="socialiconimg"></img>
-						<div class="socialitemtitle">twitch</div>
-					</a>
+				<a class=" socialitem" href="https://www.facebook.com/gmasrmit" target="_blank">
+					<img src="img/soclFacebook.png" alt="facebook icon image" class="socialiconimg"></img>
+					<div class="socialitemtitle">facebook</div>
+				</a>
 
 
-					<a class="socialitem" href="mailto:gmas.club@rmit.edu.au" target="_blank">
-						<img src="img/testimg.png" alt="email icon image" class="socialiconimg"></img>
-						<div class="socialitemtitle">email</div>
-					</a>
+				<a class="socialitem" href="https://www.instagram.com/rmitgmas" target="_blank">
+					<img src="img/soclInsta.png" alt="instagram icon image" class="socialiconimg"></img>
+					<div class="socialitemtitle">instagram</div>
+				</a>
+
+				<a class="socialitem" href="https://www.twitch.tv/rmitgmas" target="_blank">
+					<img src="img/soclTwitch.png" alt="twitch icon image" class="socialiconimg"></img>
+					<div class="socialitemtitle">twitch</div>
+				</a>
+
+
+				<a class="socialitem" href="mailto:gmas.club@rmit.edu.au" target="_blank">
+					<img src="img/testimg.png" alt="email icon image" class="socialiconimg"></img>
+					<div class="socialitemtitle">email</div>
+				</a>
 
 
 
@@ -145,78 +112,104 @@
 
 
 
-				</div><!--end inner sponsor grid layout container-->
-			</div><!--end socials box section-->
+			</div><!--end inner sponsor grid layout container-->
+		</div><!--end socials box section-->
 
-			<div class="box" target="_blank">
-				<h1 class="boxtitle">Discount Card Deals</h1>
+		<div class="box" target="_blank">
+			<p class="boxtitle">Sponsors</p>
 
-				<div class="innerflexcontainer">
-
-
-
-
-
-					<!--████ SPONSOR TILES ██████████████████████████████████████████████████-->
-
-
-					<a class="item disable-textselect" style="background-image: url(img/spsrIppudo.jpg);" onclick="showwindow('popIppudo')">
-						<div class="itemtitle">Ippudo</div>
-					</a>
-
-					<a class="item disable-textselect" style="background-image: url(img/spsrMilksha.jpg);" onclick="showwindow('popMilksha')">
-						<div class="itemtitle">Milksha</div>
-					</a>
-
-					<a class="item disable-textselect" style="background-image: url(img/spsrSamurai.jpg);" onclick="showwindow('popSamurai')">
-						<div class="itemtitle">Samurai Punk</div>
-					</a>
-
-					<a class="item disable-textselect" style="background-image: url(img/spsrZen.jpg);" onclick="showwindow('popZen')">
-						<div class="itemtitle">Zen Gaming</div>
-					</a>
-
-					<a class="item disable-textselect" style="background-image: url(img/spsrCriticalHit2.jpg);" onclick="showwindow('popCritical')">
-						<div class="itemtitle">Critical Hit</div>
-					</a>
-
-					<a class="item disable-textselect" style="background-image: url(img/spsrOneStop.jpg);" onclick="showwindow('popOne')">
-						<div class="itemtitle">One Stop Anime</div>
-					</a>
-
-					<a class="item disable-textselect" style="background-image: url(img/spsrNeko.jpg);" onclick="showwindow('popNeko')">
-						<div class="itemtitle">Neko Cards</div>
-					</a>
-
-					<a class="item disable-textselect disabled" style="background-image: url(img/spsrAnimeTown.png);" onclick="showwindow('popTown')">
-						<div class="itemtitle">!! Anime Town</div>
-					</a>
-
-					<a class="item disable-textselect" style="background-image: url(img/spsrMadman.png);" onclick="showwindow('popMadman')">
-						<div class="itemtitle">Madman</div>
-					</a>
-
-					<a class="item disable-textselect" style="background-image: url(img/spsrRUSU.jpg);" onclick="showwindow('popRusu')">
-						<div class="itemtitle">RUSU</div>
-					</a>
-
-					<a class="item disable-textselect" style="background-image: url(img/spsrRedBull.jpeg);" onclick="showwindow('popRedBull')">
-						<div class="itemtitle">Red Bull</div>
-					</a>
+			<div class="innerflexcontainer">
 
 
 
 
 
+				<!--████ SPONSOR TILES ██████████████████████████████████████████████████-->
 
 
-				</div><!--end inner sponsor grid layout container-->
-			</div> <!--end sponsor box section-->
-		</div> <!--end flexcontainer for two panels-->
+				<a class="item disable-textselect" style="background-image: url(img/spsrIppudo.jpg);" onclick="showwindow('popIppudo')">
+					<div class="itemtitle">Ippudo</div>
+				</a>
+
+				<a class="item disable-textselect" style="background-image: url(img/spsrMilksha.jpg);" onclick="showwindow('popMilksha')">
+					<div class="itemtitle">Milksha</div>
+				</a>
+
+				<a class="item disable-textselect" style="background-image: url(img/spsrSamurai.jpg);" onclick="showwindow('popSamurai')">
+					<div class="itemtitle">Samurai Punk</div>
+				</a>
+
+				<a class="item disable-textselect" style="background-image: url(img/spsrZen.jpg);" onclick="showwindow('popZen')">
+					<div class="itemtitle">Zen Gaming</div>
+				</a>
+
+				<a class="item disable-textselect" style="background-image: url(img/spsrCriticalHit2.jpg);" onclick="showwindow('popCritical')">
+					<div class="itemtitle">Critical Hit</div>
+				</a>
+
+				<a class="item disable-textselect" style="background-image: url(img/spsrOneStop.jpg);" onclick="showwindow('popOne')">
+					<div class="itemtitle">One Stop Anime</div>
+				</a>
+
+				<a class="item disable-textselect" style="background-image: url(img/spsrNeko.jpg);" onclick="showwindow('popNeko')">
+					<div class="itemtitle">Neko Cards</div>
+				</a>
+
+				<a class="item disable-textselect disabled" style="background-image: url(img/spsrAnimeTown.png);" onclick="showwindow('popTown')">
+					<div class="itemtitle">!! Anime Town</div>
+				</a>
+
+				<a class="item disable-textselect" style="background-image: url(img/spsrMadman.png);" onclick="showwindow('popMadman')">
+					<div class="itemtitle">Madman</div>
+				</a>
+
+				<a class="item disable-textselect" style="background-image: url(img/spsrRUSU.jpg);" onclick="showwindow('popRusu')">
+					<div class="itemtitle">RUSU</div>
+				</a>
+
+				<a class="item disable-textselect" style="background-image: url(img/spsrRedBull.jpeg);" onclick="showwindow('popRedBull')">
+					<div class="itemtitle">Red Bull</div>
+				</a>
 
 
 
-	</div>
+
+
+
+
+
+			</div><!--end inner sponsor grid layout container-->
+		</div> <!--end sponsor box section-->
+	</div> <!--end flexcontainer for two panels-->
+
+	<div class="flexcontainer">
+
+
+
+
+
+		<!-- ████ "ABOUT GMAS" FOOTER ██████████████████████████████████████████████████ -->
+
+		<div class="banner unlockheight" target="_blank">
+			<p class="boxtitle">About</p>
+			<div class="aboutcontent">
+
+
+
+				<p>
+					<strong>Hello its GMAS!</strong><br>
+					We’re an anime club where all are welcome. Any uni, anywhere, member or not.<br>
+					Feel free to come and join us, member or not. "Everyone is welcome" is our policy, so why not start by <a href="https://discord.gg/nk4wteZwgP" style="text-decoration: underline;">checking out our discord!</a><br>
+					<br>
+					<strong>Activities</strong><br>
+					Come to our Friday Meetups, where we have Anime, Quizzes, Pictionary, Charades, Smash, Mario Kart and Prizes.
+				</p>
+
+
+			</div>
+		</div>
+	</div> <!--end about-->
+
 
 	<div class="flexcontainer">
 
@@ -227,11 +220,11 @@
 		<!-- ████ THANK YOU ██████████████████████████████████████████████████ -->
 
 		<div class="banner unlockheight">
-			<p style="padding: 20px 20px; margin: 0px;"><strong>Artist Credits!</strong></p>
+			<p style="padding: 20px 20px; margin: 0px;">Artist Credits!</p>
 
 			<div class="aboutcontent">
 				<p>
-					Mascot Concept<br>
+					Mascot Concept, Card / Merch / Logo Illustration<br>
 					IVアN - <a style="color: red;" href="https://www.pixiv.net/en/users/55154755" target="_blank">pixiv </a><a style="color: red;" href="https://www.instagram.com/ii10000_/" target="_blank">instagram</a> <a style="color: red;" href="https://twitter.com/ii10000_" target="_blank">twitter</a>
 				</p>
 
@@ -241,7 +234,7 @@
 				</p>
 
 				<p>
-					Banner Design, Website, Membership Card<br>
+					Design: Banners, Membership Card, Website, Hoodies, Tshirts<br>
 					yuuiko - <a style="color: red;" href="https://www.patreon.com/posts/homepage-59737767" target="_blank">patreon</a>
 				</p>
 
@@ -309,116 +302,106 @@ between <a> [here] </a> brackets     Replace with text to display.
 
 		<!-- TITLE -->
 		<h1>
-			Sign up
+			Upcoming Event
 		</h1>
 
 		<!-- SUBTITLE -->
 		<h2>
-			Join the club!
+			Welcome BBQ.
 		</h2>
 
 		<!-- Intro Paragraph -->
 		<p>
-			Want to become a member? Joining is free.<br>
-			Just fill this form, and you'll become an official member we can contact for events! <br>
+			It hasn't been long since our last event, but here comes another one!<br>
+			And for this time, we will be having a BBQ to welcome all the new members joining in the new year!<br>
 			<br>
+			During the BBQ, you will be able to sign up for our membership and receive our Membership Card after that, which you will be able to receive benefits from our sponsors!<br>
 		</p>
 
-		<!-- FORM BUTTON -->
-		<a class="linkbutton" href="https://forms.gle/gQHYSiEY6M23K4EC7" target="_blank">
+
+		<a class="linkbutton" href="https://forms.gle/Mzeaf7hWpPdaHtpF9" target="_blank">
 
 			<!-- Button Label -->
-			Fill Form to Sign Up!
+			JOIN EVENT • Fill Form
 
 		</a>
 
-		<!-- END NOTES -->
-		<p>
-			<!-- Thankyou to @zerotwo_simp and @dingster for the awesome banner art, check out her Instagram <a href="https://www.instagram.com/fushiginek0/">here</a>! -->
-		</p>
-	</div>
+		<!-- WHERE / WHEN -->
+		<div class="mapheadersection">
+			<h3>
+				When: <br>
+				Sunday 6th March, 12:00 PM<br>
+				<br>
+				Where: <br>
+				Alexandra Ave BBQs <br>
+				(Capital City Trail, South of Swan St Bridge)<br>
+				Melbourne VIC 3004
+			</h3>
+		</div>
+
+		<!-- CLOSER -->
+		<!-- <p>
+		Please fill in this form prior to the event, thanks!<br>
+	</p> -->
+
+
+	<!-- GOOGLE MAP -->
+	<iframe class="mapframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1575.7843538479606!2d144.97674054100034!3d-37.82357001530709!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642bb856cec6b%3A0x436cecf3ee034252!2sPublic%20BBQ!5e0!3m2!1sen!2sus!4v1645792840277!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+
+	<!-- END NOTES -->
+	<p>
+		<br>
+		<br>
+		Hope to see you guys there!
+		<br>
+		<br>
+		<br>
+	</p>
+</div>
 </div>
 
-<!-- ---------------------- FEATURED EVENT --------- -->
-<div class="popupbackground hidden disabled" id="popPurchase">
+<!-- ---------------------- PODCAST EVENT --------- -->
+<div class="popupbackground hidden disabled" id="popPodcast">
 	<div class="popupwindow">
-		<a class="exitbtn" onclick="hidewindow('popPurchase');">CLOSE</a>
+		<a class="exitbtn" onclick="hidewindow('popPodcast');">CLOSE</a>
 
-		<!-- TITLE -->
-		<h1>
-			Purchase a Card
-		</h1>
+		<h1>GMAS PODCAST</h1>
+		<h2>Episode 2 - Old School Anime</h2>
 
-		<!-- SUBTITLE -->
-		<h2>
-			$10 for Sponsor Access
-		</h2>
-
-		<!-- Intro Paragraph -->
 		<p>
-			Support the club and get discounts!<br>
-			Ramen at Ippudo, Bubble tea at Milksha, and deals for your anime shopping.<br>
-			Card holders also get discounts on GMAS events and merch!<br>
+			The second episode of the GMAS podcast is this Saturday!!<br>
 			<br>
-			You don't need a card to join the club, but it greatly helps support us!<br>
+			This week, the topic of discussion is going to be old school anime<br>
 			<br>
-			Fill this form, then collect and pay for the card by visiting one of our comittee members.<br>
-			<br>
+			Join us Saturday @7pm AEST for a live podcast as we discuss some iconic anime of the 80s and 90s era<br>
 		</p>
 
-		<!-- FORM BUTTON -->
-		<a class="linkbutton" href="https://docs.google.com/forms/d/e/1FAIpQLScObvHzDEOZh0DnMqGtmI4XG_fdiOfaTLcHzMmU577S3BbmCA/viewform" target="_blank">
+		<div class="highlightsection">
+			<h3>
+				When: Saturday @7pm AEST<br>
+				Where: TWITCH
+			</h3>
+		</div>
 
-			<!-- Button Label -->
-			Fill Form to Get a Card!
+		<!-- <p>
+	</p> -->
 
-		</a>
+	<a class="linkbutton" href="https://www.twitch.tv/rmitgmas" target="_blank">
 
-		<!-- END NOTES -->
-		<p>
-			<!-- Thankyou to @zerotwo_simp and @dingster for the awesome banner art, check out her Instagram <a href="https://www.instagram.com/fushiginek0/">here</a>! -->
-		</p>
-	</div>
+		<!-- Button Label -->
+		Visit GMAS's Twitch
+
+	</a>
+
+	<!-- <iframe class="mapframe" src="https://maps.google.com/maps?q=St%20Kilda%20Beach,%20St%20Kilda%20VIC%203182,%20Australia&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe> -->
+
+	<!-- <p>
+	Thankyou to @zerotwo_simp and @dingster for the awesome banner art, check out her Instagram <a href="https://www.instagram.com/fushiginek0/">here</a>!
+</p> -->
+</div>
 </div>
 
 
-<!-- ---------------------- CREDITS --------- -->
-<div class="popupbackground hidden disabled" id="popCredits">
-	<div class="popupwindow">
-		<a class="exitbtn" onclick="hidewindow('popCredits');">CLOSE</a>
-
-		<h1>Art and Design Credits</h1>
-		<h2>Support epic artists!</h2>
-
-		<div class="highlightsection">
-			<h3>
-				Mascot Concept, Card / Merch / Logo Illustration<br>
-				IVアN - <a style="color: red;" href="https://www.instagram.com/ii10000_/" target="_blank">instagram</a> <a style="color: red;" href="https://twitter.com/ii10000_" target="_blank">twitter</a>
-			</h3>
-		</div>
-
-		<div class="highlightsection">
-			<h3>
-				Banner Illustration<br>
-				Fushiginek0 - <a style="color: red;" href="https://instagram.com/fushiginek0?utm_medium=copy_link" target="_blank">instagram</a>
-			</h3>
-		</div>
-
-		<div class="highlightsection">
-			<h3>
-				Design: Banners, Membership Card, Website, Hoodies, Tshirts<br>
-				yuuiko - <a style="color: red;" href="https://www.patreon.com/posts/homepage-59737767" target="_blank">patreon</a>
-			</h3>
-		</div>
-
-		<div class="highlightsection">
-			<h3>
-				Thank you for your ideas and contributions:<br>
-				Abyxxia, MUNDA, JeffTL, Goody10k
-			</h3>
-		</div>
-	</div>
-</div>
 
 
 
@@ -438,7 +421,7 @@ between <a> [here] </a> brackets     Replace with text to display.
 			We thank Madman for help with supporting our events, helping us provide prizes and various other giveaways!<br>
 		</p>
 
-		<a class="linkbutton" href="https://www.madman.com.au/actions/channel.do?method=view" target="_blank">www.madman.com.au</a>
+		<a class="linkbutton" href="https://www.madman.com.au/actions/channel.do?method=view" target="_blank">Visit Website • madman.com.au</a>
 
 		<!-- <iframe class="mapframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe> -->
 	</div>
@@ -455,11 +438,24 @@ between <a> [here] </a> brackets     Replace with text to display.
 			First hour free sessions and discounted booking of Zen Gaming facilities<br>
 		</p>
 
-		<a class="linkbutton" href="https://zen.gl" target="_blank">zen.gl</a>
+		<div class="mapheadersection">
+			<h3>
+				280 City Rd, <br>
+				Southbank VIC 3006
+			</h3>
+
+			<a class="linkbutton" href="https://zen.gl" target="_blank">Visit Website • zen.gl</a>
+		</div>
 
 		<iframe class="mapframe"
 		src="https://maps.google.com/maps?q=zen%20gaming%20lounge&t=&z=18&ie=UTF8&iwloc=&output=embed"
 		allowfullscreen="" loading="lazy"></iframe>
+
+		<div class="navbtnsec">
+			<a class="navbtn" href="https://g.page/zengaminglounge?share" target="_blank">Google Maps</a>
+			<a class="navbtn" href="https://maps.apple.com/?address=280%20City%20Rd,%20Southbank%20VIC%203006,%20Australia&auid=3622975880258616221&ll=-37.826399,144.959153&lsp=9902&q=ZEN%20Gaming%20Lounge&_ext=CjEKBAgEEBYKBAgFEAMKBAgGEAgKBAgKEAAKBAhSEAEKBAhVEA8KBAhZEAIKBQikARABEiYpsl3rq1rqQsAxTqv5xYIeYkA5NIjFTzTpQsBBCNK08N8eYkBQAw%3D%3D" target="_blank">Apple Maps</a>
+		</div>
+
 	</div>
 </div>
 
@@ -477,11 +473,25 @@ between <a> [here] </a> brackets     Replace with text to display.
 			• $3 Tapioca Series<br>
 		</p>
 
-		<a class="linkbutton" href="http://ippudo.com.au" target="_blank">ippudo.com.au</a>
+		<div class="mapheadersection">
+			<h3>Ippudo QV</h3>
+
+			<h3>
+				18 Artemis Ln<br>
+				Melbourne VIC 3000
+			</h3>
+
+			<a class="linkbutton" href="http://ippudo.com.au" target="_blank">Visit Website • ippudo.com.au</a>
+		</div>
 
 		<iframe class="mapframe"
 		src="https://maps.google.com/maps?q=ippudo&t=&z=18&ie=UTF8&iwloc=&output=embed"
 		allowfullscreen="" loading="lazy"></iframe>
+
+		<div class="navbtnsec">
+			<a class="navbtn" href="https://g.page/IPPUDOQV?share" target="_blank">Google Maps</a>
+			<a class="navbtn" href="https://maps.apple.com/?address=18-22%20Artemis%20Lane,%20Melbourne%20VIC%203000,%20Australia&auid=6670127284892627802&ll=-37.810441,144.966355&lsp=9902&q=Ippudo&_ext=CjIKBAgEEBYKBAgFEAMKBQgGENACCgQIChAACgQIUhABCgQIVRAQCgQIWRAECgUIpAEQARImKQmOy8dT6ELAMabORpG9HmJAOYu4pWst50LAQVZD5LYaH2JAUAQ%3D" target="_blank">Apple Maps</a>
+		</div>
 	</div>
 </div>
 
@@ -496,11 +506,15 @@ between <a> [here] </a> brackets     Replace with text to display.
 			Get 10% off on Milksha products at all outlets.<br>
 		</p>
 
-		<a class="linkbutton" href="https://milksha.com.sg" target="_blank">milksha.com.sg</a>
+		<div class="mapheadersection">
+			<h3>Shop in store at all chains</h3>
+			<a class="linkbutton" href="https://milksha.com.sg" target="_blank">Visit Website • milksha.com.sg</a>
+		</div>
 
 		<iframe class="mapframe"
 		src="https://maps.google.com/maps?q=milksha&t=&z=11&ie=UTF8&iwloc=&output=embed"
 		allowfullscreen="" loading="lazy"></iframe>
+
 	</div>
 </div>
 
@@ -513,10 +527,13 @@ between <a> [here] </a> brackets     Replace with text to display.
 
 		<p>
 			Get 20% off storewide.<br>
-			Purchase a card to get the discount code!
+			Use discount code: GMASFAM20
 		</p>
 
-		<a class="linkbutton" href="https://store.samuraipunk.com" target="_blank">Shop Online</a>
+		<div class="mapheadersection">
+			<h3>Shop Online</h3>
+			<a class="linkbutton" href="https://store.samuraipunk.com" target="_blank">Visit Website • store.samuraipunk.com</a>
+		</div>
 
 		<!-- <iframe class="mapframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe> -->
 	</div>
@@ -534,7 +551,10 @@ between <a> [here] </a> brackets     Replace with text to display.
 			Discount Code: ?????????????????????????????????????
 		</p>
 
-		<a class="linkbutton" href="https://www.animetown.com.au" target="_blank">Shop Online</a>
+		<div class="mapheadersection">
+			<h3>Shop Online</h3>
+			<a class="linkbutton" href="https://www.animetown.com.au" target="_blank">Visit Website • animetown.com.au</a>
+		</div>
 
 		<!-- <iframe class="mapframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe> -->
 	</div>
@@ -549,17 +569,33 @@ between <a> [here] </a> brackets     Replace with text to display.
 
 		<p>
 			Online and instore 5% discount<br>
-			Purchase a card to get the discount code!
+			Use Discount Code: gmasweebs
 		</p>
 
-		<a class="linkbutton" href="https://criticalhit.com.au" target="_blank">criticalhit.com.au</a>
+		<div class="mapheadersection">
+			<h3>Shop Online and In Store</h3>
+
+			<h3>
+				377 Little Collins St<br>
+				Melbourne VIC 3000
+			</h3>
+
+			<a class="linkbutton" href="https://criticalhit.com.au" target="_blank">Visit Website • criticalhit.com.au</a>
+		</div>
 
 		<iframe class="mapframe"
 		src="https://maps.google.com/maps?q=critical%20hit&t=&z=18&ie=UTF8&iwloc=&output=embed"
 		allowfullscreen="" loading="lazy"></iframe>
+
+		<div class="navbtnsec">
+			<a class="navbtn" href="https://g.page/CriticalHitStore?share" target="_blank">Google Maps</a>
+			<a class="navbtn" href="https://maps.apple.com/?address=1/377%20Little%20Collins%20Street,%20Melbourne%20VIC%203000,%20Australia&auid=1971776626329173634&ll=-37.815772,144.962389&lsp=9902&q=Critical%20Hit&_ext=CjEKBAgEEBYKBAgFEAMKBAgGEBYKBAgKEAAKBAhSEAEKBAhVEBAKBAhZEAQKBQikARABEiYpiYBDt/zoQsAxOkMxLp0eYkA5C6sdW9bnQsBB0gB5VfoeYkBQBA%3D%3D" target="_blank">Apple Maps</a>
+		</div>
+
+		<img class="popupcontentimg" src="img/contentCrit.png" alt=""></img>
+		<img class="popupcontentimg" src="img/contentCrit2.png" alt=""></img>
 	</div>
 </div>
-
 
 <!-- ---------------------- ONE STOP ANIME --------- -->
 <div class="popupbackground hidden disabled" id="popOne">
@@ -586,6 +622,11 @@ between <a> [here] </a> brackets     Replace with text to display.
 		src="https://maps.google.com/maps?q=one%20stop%20anime&t=&z=18&ie=UTF8&iwloc=&output=embed"
 		allowfullscreen="" loading="lazy"></iframe>
 
+		<div class="navbtnsec">
+			<a class="navbtn" href="https://goo.gl/maps/4X9XamfXDkBQAZiQ9" target="_blank">Google Maps</a>
+			<a class="navbtn" href="https://maps.apple.com/?address=Floor%203%20180%20Bourke%20St,%20Melbourne%20VIC%203000,%20Australia&auid=14320327462963291094&ll=-37.812668,144.967804&lsp=9902&q=One%20Stop%20Anime&_ext=CjIKBAgEEBYKBAgFEAMKBQgGEPECCgQIChAACgQIUhABCgQIVRAQCgQIWRAECgUIpAEQARImKWMDM/+X6ELAMQbWFonJHmJAOeUtDaNx50LAQcxpYK8mH2JAUAQ%3D" target="_blank">Apple Maps</a>
+		</div>
+
 	</div>
 </div>
 
@@ -611,11 +652,28 @@ between <a> [here] </a> brackets     Replace with text to display.
 			<li>Sign up to the Neko Loyalty program.</li>
 		</ul>
 
-		<a class="linkbutton" href="https://www.nekocards.com.au" target="_blank">nekocards.com.au</a>
+		<div class="mapheadersection">
+			<h3>Shop online, and play in store!</h3>
+
+			<h3>
+				Level 1, <br>
+				311 Elizabeth Street, Little Lonsdale St, <br>
+				Melbourne VIC 3000
+			</h3>
+
+			<a class="linkbutton" href="https://www.nekocards.com.au" target="_blank">Visit Website • nekocards.com.au</a>
+		</div>
 
 		<iframe class="mapframe"
 		src="https://maps.google.com/maps?q=neko%20cards&t=&z=18&ie=UTF8&iwloc=&output=embed"
 		allowfullscreen="" loading="lazy"></iframe>
+
+		<div class="navbtnsec">
+			<a class="navbtn" href="https://goo.gl/maps/corqXp9hnvTvTYRL8" target="_blank">Google Maps</a>
+			<a class="navbtn" href="https://maps.apple.com/?address=1/311%20Elizabeth%20St,%20Melbourne%20VIC%203000,%20Australia&auid=12876720255661217380&ll=-37.811491,144.961490&lsp=9902&q=Nekocards&_ext=CjEKBAgEEBYKBAgFEAMKBAgGEBYKBAgKEAAKBAhSEAEKBAhVEBAKBAhZEAUKBQikARABEiYpJMliYHHoQsAx0qLUiJYeYkA5pvM8BEvnQsBB9MO8rvMeYkBQBA%3D%3D" target="_blank">Apple Maps</a>
+		</div>
+
+		<img class="popupcontentimg" src="img/contentneko.png" alt=""></img>
 	</div>
 </div>
 
@@ -630,7 +688,7 @@ between <a> [here] </a> brackets     Replace with text to display.
 			GMAS is a RUSU club, we thank the Student Union for helping with management and funding our events and merch!<br>
 		</p>
 
-		<a class="linkbutton" href="https://www.rusu.rmit.edu.au" target="_blank">www.rusu.rmit.edu.au</a>
+		<a class="linkbutton" href="https://www.rusu.rmit.edu.au" target="_blank">Visit Website • www.rusu.rmit.edu.au</a>
 
 		<!-- <iframe class="mapframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.8784686030677!2d144.9591559339118!3d-37.8265847776825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5492aef92d%3A0xa73c21dca12e65c3!2sZEN%20Gaming%20Lounge!5e0!3m2!1sen!2sau!4v1644049278738!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe> -->
 	</div>
