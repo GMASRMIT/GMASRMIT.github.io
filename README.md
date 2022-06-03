@@ -12,6 +12,7 @@ These QR codes can be dynamically reset to different URLS using the http://rebra
 
 Any changes to URLs that are referred to by QRs out there in the world MUST be updated in rebrandly.
 If not, all QR codes across all membership cards will 404 or direct to the wrong page.
+
 **Request to update rebrandly first before going live with a commit that changes URL structure.**
 
 Access the live website here:
