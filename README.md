@@ -23,3 +23,7 @@ https://gmasrmit.github.io/
 created by yuuiko#1345 (discord)
 
 Managed by GMAS' github account.
+
+
+GMAS Github Organisation:
+https://github.com/rmitgmas
