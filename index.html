@@ -77,6 +77,10 @@
 
 		<!-- This is where you change the banner image name if required.      ADD ' disabled' to CLASS to hide this banner.    -->
 		<!--                                  ⬇︎ SPECIFY IMAGE                ⬇︎ ADD ' disabled'                                -->
+		<div style="background-image: url(img/cosplaycafe.png);" class="banner clickablebanner" onclick="showwindow('popEvent')">
+			<h1 class="boxtitle">COSPLAY CAFE</h1>
+		</div>
+
 		<div style="background-image: url(img/signup.png);" class="banner clickablebanner" onclick="showwindow('popFeatured')">
 			<h1 class="boxtitle">BECOME A <br> MEMBER</h1>
 		</div>
@@ -322,6 +326,47 @@ between <a> [here] </a> brackets     Replace with text to display.
 -->
 
 <!-- ---------------------- FEATURED EVENT --------- -->
+<div class="popupbackground hidden disabled" id="popEvent">
+	<div class="popupwindow">
+		<a class="exitbtn" onclick="hidewindow('popEvent');">CLOSE</a>
+
+		<!-- TITLE -->
+		<h1>
+			Cosplay Cafe
+		</h1>
+
+		<!-- SUBTITLE -->
+		<h2>
+			Join us for Food, Drink and Cosplays!
+		</h2>
+
+		<!-- Intro Paragraph -->
+		<p>
+			The most anticipated event for the year is finally happening!<br>
+			<br>
+			We are just as excited presenting this event to everyone as the you guys that will be attending it. <br>
+			Whether it is your favourite character from a game, manga or anime be sure to show them off in their true glory! <br>
+			<br>
+			On 13th November @ 12:00 PM to 5:00 PM, we will be hosting the café in Building 16 Storey Hall (336–348 Swanston Street Melbourne). <br>
+			View the eventbrite bellow for all the info! <br>
+		</p>
+
+		<!-- FORM BUTTON -->
+		<a class="linkbutton" href="https://www.eventbrite.com/e/gmas-cosplay-cafe-tickets-438811054677?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=escb" target="_blank" onclick="hidewindow('popFeatured');">
+
+			<!-- Button Label -->
+			View Eventbrite!
+
+		</a>
+
+		<!-- END NOTES -->
+		<p>
+			<!-- Thankyou to @zerotwo_simp and @dingster for the awesome banner art, check out her Instagram <a href="https://www.instagram.com/fushiginek0/">here</a>! -->
+		</p>
+	</div>
+</div>
+
+<!-- ---------------------- MEMBER --------- -->
 <div class="popupbackground hidden disabled" id="popFeatured">
 	<div class="popupwindow">
 		<a class="exitbtn" onclick="hidewindow('popFeatured');">CLOSE</a>
@@ -358,7 +403,7 @@ between <a> [here] </a> brackets     Replace with text to display.
 	</div>
 </div>
 
-<!-- ---------------------- FEATURED EVENT --------- -->
+<!-- ---------------------- CARD --------- -->
 <div class="popupbackground hidden disabled" id="popPurchase">
 	<div class="popupwindow">
 		<a class="exitbtn" onclick="hidewindow('popPurchase');">CLOSE</a>
