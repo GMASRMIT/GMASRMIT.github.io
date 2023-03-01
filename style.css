@@ -236,6 +236,10 @@
 
 	/*█████████████████████████████████████████████████ SOCIAL ITEMS █████ */
 
+    #discordbutton {
+        width: 250px; !important
+    }
+
 	.socialitem {
 		display: grid;
 		margin: 10px;
@@ -529,6 +533,10 @@
 			padding: 40px 2px 0px 2px !important;
 			margin: 0;
 		}
+        
+        #discordbutton {
+            width: 100px; !important;
+        }
 
 		h1 {
 			font-size: 40px !important;
